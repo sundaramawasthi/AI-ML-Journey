@@ -1,0 +1,23 @@
+ # Type Conversion
+
+var1= 2 #int
+var2 = 4.45 #float
+
+sum = var1+var2
+# variable = int+ float
+
+print(sum)
+
+
+# Type Casting
+
+var1 = "2" #string
+var2 = 4.56 #Float
+var3 = int("2") # int
+
+sum= var2+var3 #float + int
+
+print(type(var3))
+print(sum)
+
+

@@ -73,4 +73,7 @@ sum= number1+number2
 
 print("Sum of two number is ",sum)
 
+#** is valid airthmatic operation in python
 #python is a implicit language.
+
+### long comment ###
