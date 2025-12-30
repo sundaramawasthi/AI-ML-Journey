@@ -1,30 +1,32 @@
 # 🚀 AI-ML-Journey
 
-This repository documents my **AI/ML learning journey**, starting from core prerequisites and moving step by step toward real-world projects.
+This repository documents my learning journey in **Artificial Intelligence & Machine Learning**, starting from core prerequisites and gradually moving toward real-world projects.
 
-I am currently preparing for **M.Tech in Artificial Intelligence & Machine Learning**, focusing on building **strong fundamentals**, consistency, and practical understanding.
+I am currently preparing for **M.Tech in Artificial Intelligence & Machine Learning**, with a strong focus on fundamentals, consistency, and practical understanding.
 
 ---
 
-## 📌 What this repository contains
+## 📌 What This Repository Contains
 
 ### 🔹 Prerequisites
-- Python programming (basic to advanced)
-- Mathematics for ML  
+- Python Programming (Basics → Advanced)
+- Mathematics for Machine Learning  
   - Linear Algebra  
-  - Probability & Statistics  
+  - Probability & Statistics
 - Logical thinking & problem-solving
-- Improving technical communication (English)
+- Technical communication improvement
 
-### 🔹 Learning Approach
-- Writing clean and simple code
-- Explaining concepts through comments
-- Practicing daily and committing regularly
+---
+
+## 🔹 Learning Approach
+- Writing clean and readable code
+- Explaining concepts using comments
+- Practicing daily and committing consistently
 - Learning in public to stay accountable
 
 ---
 
-## 🗂️ Repository Structure (will grow over time)
+## 🗂️ Repository Structure *(grows over time)*
 
 AI-ML-Journey/
 │
@@ -39,47 +41,30 @@ AI-ML-Journey/
 ├── ml/
 │ ├── ml_fundamentals.md
 │
-└── README.mdAI-ML-Journey/
-│
-├── python/
-│ ├── day01_python_basics.py
-│ ├── day02_variables_and_types.py
-│
-├── math/
-│ ├── linear_algebra_notes.md
-│ ├── probability_basics.md
-│
-├── ml/
-│ ├── ml_fundamentals.md
-│
 └── README.md
 
-
-*(Structure will be updated as I progress.)*
+yaml
+Copy code
 
 ---
 
 ## 🎯 Goals
-- Build a strong foundation in AI/ML
-- Transition from basics to advanced ML concepts
-- Work on real-world projects
-- Share knowledge and help beginners like me
+- Build strong foundations in AI/ML
+- Move from basics to advanced ML concepts
+- Work on real-world ML projects
+- Share knowledge and help fellow beginners
 
 ---
 
 ## 🌱 Current Status
-📍 **Phase:** Prerequisites  
-📍 **Focus:** Python + Math  
-📍 **Method:** Daily practice & documentation  
+- 📍 **Phase:** Prerequisites  
+- 📍 **Focus:** Python + Mathematics  
+- 📍 **Method:** Daily practice & documentation  
 
 ---
 
 ## 🤝 Connect & Follow the Journey
-- LinkedIn: *(add your LinkedIn link here)*
-- GitHub: *(this repository)*
+- **LinkedIn:** [(https://www.linkedin.com/in/sundram-awasthi-97603b20b/)]
+- **GitHub:** [(https://github.com/sundaramawasthi/AI-ML-Journey)] 
 
-> *Learning in public. Improving every day. Building for the long term.*
-
----
-
-⭐ If you find this journey useful, feel free to star the repository.
+> Learning in public. Improving every day. Building for the long term.
