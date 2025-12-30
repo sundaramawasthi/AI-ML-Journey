@@ -21,3 +21,16 @@ print(type(var3))
 print(sum)
 
 
+#String
+
+#String is data type that stores a swquence of character
+
+# Concatenation
+
+str1 = "Python"
+str2 = "language"
+finalStr = str1+str2
+print("Concatenation of string is str1+str2 = ", finalStr)
+
+print("Length of str = ",len(finalStr))
+
