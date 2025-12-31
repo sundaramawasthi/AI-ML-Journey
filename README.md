@@ -69,4 +69,9 @@ Copy code
 
 > Learning in public. Improving every day. Building for the long term.
 
-![Visitors](https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&label=Profile%20Views&color=0e75b6&style=flat)
+# AI-ML Journey 🚀
+
+![Repo Views](https://komarev.com/ghpvc/?username=sundaramawasthi&repo=AI-ML-Journey&label=Repo%20Views&color=blue)
+
+This repository documents my learning-in-public journey in AI & ML.
+
