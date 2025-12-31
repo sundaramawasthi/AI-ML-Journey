@@ -26,3 +26,29 @@ str = "language"
 # In negative slicing it skip last index i.e. -3 
 print("Negative slicing in python is = ", str[-5:-3])
 
+
+#String Function
+
+# str.endswith("") #This function check if the string end with given str or not.
+
+str= "check me"
+
+print("Is check string last string is ck, if yes return true =",str.endswith("k"))
+
+#str.capitalize() # function that capitalizes 1st char
+
+print("capitalize 1st letter of string",str.capitalize())
+
+
+# str.replace() #Function replace the old value with new value
+
+print("It replace c with k = ",str.replace("c","k"))
+
+
+#str.find() # function that find the index of given string 
+print("Index of string me is ", str.find("me"))
+
+
+# str.count("") #Fuction count the occurrence of substr
+
+print("str check cc count is ", str.count("me"))

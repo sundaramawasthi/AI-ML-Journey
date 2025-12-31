@@ -32,5 +32,8 @@ str2 = "language"
 finalStr = str1+str2
 print("Concatenation of string is str1+str2 = ", finalStr)
 
+
+
+# Find the length of string
 print("Length of str = ",len(finalStr))
 
