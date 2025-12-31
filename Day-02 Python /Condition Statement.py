@@ -51,3 +51,13 @@ print("you can do vote")
 sal=float(input("Enter your salary"))
 total= sal*(0.1,0.2) [sal>40000]
 print("good")
+
+
+
+age = 34
+
+if(age>=18):
+    if(age>=80):
+        print("can not drive")
+    else:
+        print("can drive")
