@@ -51,4 +51,4 @@ print("Index of string me is ", str.find("me"))
 
 # str.count("") #Fuction count the occurrence of substr
 
-print("str check cc count is ", str.count("me"))
+print("str check c count is ", str.count("c"))
