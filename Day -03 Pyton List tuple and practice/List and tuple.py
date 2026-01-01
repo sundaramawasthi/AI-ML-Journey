@@ -1,8 +1,8 @@
 # List
-# String are imutable
-# list are mutable
-#  Built in data type that stores set of values
-# can store element of different types (Integer, float, string, etc)
+# Strings are immutable
+# Lists are mutable
+# Built-in data type that stores a collection of values
+# Can store elements of different data types (integer, float, string, etc.)
 
 
 property =([200,300,600,700])
@@ -97,8 +97,9 @@ print("Our new pop list is index 2=",num)
 # Tuples are immutables
 
 tup = (2,4,6,7,5) #Single element in tuple created (1, )
-print("list of tuples is = ",tup)
-print("Index 2 of tup is ",type(tup[2]))
+print("Element at index 2 is:", tup[2])
+print("Type of element:", type(tup[2]))
+
 
 #Slicing in tuple
 
