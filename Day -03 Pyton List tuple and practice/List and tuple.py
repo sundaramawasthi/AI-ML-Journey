@@ -31,16 +31,16 @@ collection = ["name", "sundram", "age", 18, "place"]
 
 print("Our collection is = ",collection)
 
-print("append the place name Delhi",collection.append("Delhi"))
-
-print("our new list is = ",collection)
+collection.append("Delhi")
+print("After append:", collection)
 
 
 # sort() method
 
 num = ([45,67,23,90])
 print("Our list is = ",num)
-print("sort number using sort method",num.sort)
+num.sort()
+print("sort number using sort method num.sort")
 
 print("New list is = ",num)
 
@@ -56,8 +56,9 @@ print("New list is = ",num)
 alpha = (['a','d','t','e','g','t'])
 
 print("Our list is = ",alpha)
+alpha.sort()
 
-print("sort the char using alphs.sort",alpha.sort())
+print("sort the char using alphs.sort alpha.sort()")
 
 print("New list is =",alpha)
 
