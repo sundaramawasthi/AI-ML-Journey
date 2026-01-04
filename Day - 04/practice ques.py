@@ -45,8 +45,10 @@ print(" Our updated list is",marks)
 cgpa = {}
 
 x = int(input("Enter int value in cgpa"))
-cgpa.update({"cgpa" : x})
+cgpa.update({"cgpa1" : x})
 y = float(input("Enter value in float"))
 cgpa.update({"cgpa2" : y})
 
 print("Latest CGPA is",cgpa)
+
+#Python treat 8 and 8.0 same 
