@@ -38,3 +38,15 @@ def natural(n):
 
 sum =natural(num)
 print(sum)
+
+
+# Write a recursive function to print all element in a list
+
+def print_lst(list, idx=0):
+    if(idx == len(list)):
+        return
+    print(list[idx])
+    print_lst(list,idx+1)
+
+fruits = ["mango", "litchi"]
+print_lst(fruits)
