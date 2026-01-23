@@ -119,3 +119,4 @@ with open("demo.txt", "r") as f:
                 if(int(val)%2 == 0):
                         count+=1
 print(count)
+
