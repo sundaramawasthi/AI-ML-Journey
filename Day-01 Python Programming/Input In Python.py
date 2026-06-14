@@ -26,4 +26,7 @@ num2 = int(input("Enter 2nd number"))
 if(num < num2):
     print("num 1 is less than num 2 , False")
 else:
-    print("num 1 is greater then num 2, True")
+    print("num 1 is greater then num 2 yes it is, True")
+
+
+    
