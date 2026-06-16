@@ -16,9 +16,9 @@ built in and user define function
 '''
 
 def sum(a,b):
-    sum= a+b
-    print("sum of a and b =",sum)
-    return sum
+    add= a+b
+    print("sum of a and b =",add)
+    return add
 
 sum(4,5) # we call function here
 

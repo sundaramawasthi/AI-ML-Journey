@@ -14,7 +14,7 @@ Types of file
 """ WE HAE TO OPEN A FILE BEFORE READING OR WRITING"""
 
 #F =open("file_name","mode")
-# mode = read or write
+# mode = read or write ( We have two mode read or write)
 
 f = open("/Users/shivamawasthi/Desktop/AI-ML-Journey/Day - 05 Python/sample.txt", "r") # we open file
 data = f.read() # we can pass parameter also line number of character
