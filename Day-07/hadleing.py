@@ -207,3 +207,6 @@ print("2. except   -> Handles the error")
 print("3. else     -> Runs if no error occurs")
 print("4. finally  -> Runs always")
 print("5. raise    -> Creates custom exceptions")
+
+
+#Here in the program when we enter the value which is greater then a then it give us valid output, and when we enter 0 then it give us invalid valid, even though o is an valid int value but it show the error in other shell so here concept came exceptional handeling. we can also handle using if else, but problem is in efelse we have to thing the condtion of the if else before so it little bit difficult so the module given in the python that is exceptional handeling.
