@@ -1,5 +1,39 @@
  # Type Conversion
 
+#Type Conversion in Python
+"""
+
+Type Conversion means converting one data type into another data type automatically by Python.
+
+This is also called Implicit Type Conversion."""
+Example
+a = 10      # int
+b = 5.5     # float
+
+result = a + b
+
+print(result)
+print(type(result))
+Output
+15.5
+#<class 'float'>
+""" 
+Here Python automatically converts 10 (int) into 10.0 (float) before performing the addition.
+
+Type Casting in Python
+
+Type Casting means converting one data type into another manually using functions.
+
+This is also called Explicit Type Conversion.
+
+Common Type Casting Functions
+Function	Description
+int()	Converts value to Integer
+float()	Converts value to Float
+str()	Converts value to String
+bool()	Converts value to Boolean
+"""
+
 var1= 2 #int
 var2 = 4.45 #float
 

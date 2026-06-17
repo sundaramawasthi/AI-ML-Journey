@@ -1,6 +1,26 @@
  
 # Indexing
 
+#What is Indexing?
+"""
+Indexing is used to access a single character from a string using its position number (index).
+
+Python starts counting from 0."""
+
+
+"""
+Positive Indexing
+String =  P   y   t   h   o   n
+Index  =  0   1   2   3   4   5
+Negative Indexing
+
+Negative indexing starts from the end.
+
+String =  P   y   t   h   o   n
+Index  = -6 -5  -4  -3  -2  -1
+
+"""
+
 Text = "Python"
 print("Index 1",Text[1]) # index of python = [0],[1],[2],[3],[4],[5]
 print("Total index in python is =",len(Text)-1)
@@ -8,6 +28,28 @@ print("Index in python start from 0")
 
 # Slicing
 # Accessing parts of a string
+
+
+"""
+What is Slicing?
+
+Slicing is used to get multiple characters from a string.
+
+Syntax
+string[start : end]
+start → Included
+end → Excluded
+"""
+
+
+"""
+Indexing	Slicing
+Access one character	Access multiple characters
+Uses one index	Uses start:end
+Returns a single value	Returns a substring
+Example: name[0]	Example: name[0:3]
+
+"""
 
 #SYNTAX - str[ starting_idx : Ending_idx]
 
