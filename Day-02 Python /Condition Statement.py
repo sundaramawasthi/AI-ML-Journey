@@ -21,6 +21,11 @@ age = 18
 
 if age >= 18:
     print("You are eligible to vote")
+
+
+
+
+
 2. if-else Statement
 
 Used when you have two choices: one for true, one for false.
@@ -37,6 +42,11 @@ if age >= 18:
     print("Eligible to vote")
 else:
     print("Not eligible to vote")
+
+
+
+
+
 3. if-elif-else Statement
 
 Used when there are multiple conditions.
@@ -59,6 +69,11 @@ elif marks >= 50:
     print("Grade C")
 else:
     print("Fail")
+
+
+
+
+
 4. Nested if Statement
 
 An if inside another if.
@@ -77,6 +92,8 @@ else:
 
 
 """
+
+
 
 
 
