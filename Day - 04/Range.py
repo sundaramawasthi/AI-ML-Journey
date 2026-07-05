@@ -1,7 +1,18 @@
-# Range() 
-# Range functions return a sequence of number, starting from 0 by default,
-# and increment by 1 ( by default) and stop before specialize number
- # range( start ?,stop,step?)  # strp mean how much you want increment.
+# RANGE FUNCTION
+
+# range() is used to generate a sequence of numbers.
+# By default:
+# It starts from 0.
+# It increases by 1.
+# It stops before the last number.
+
+# Syntax:
+# range(start, stop, step)
+# start -> Starting number (optional)
+# stop  -> Ending number (required, not included)
+# step  -> Increment or decrement value (optional)
+
+
 
 
 #staring,stop,step
