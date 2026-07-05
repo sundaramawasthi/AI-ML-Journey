@@ -33,26 +33,7 @@ while(i<=10):
     i+=1
 
 
-# WAP to print the element of the following list using a loop
 
-#[1,4,9,16,25,36,49,64]
-
-num = int(input("Enter the num "))
-
-while(num<=8):
-  print("seriese is",num*num) #Seriese is square of each num
-  num+=1
-
-
-# Another method is
-
-num  = [1,4,9,16,25,36,49,64]
-
-idx= (int(input("Enter the idx value less then 0 ")))
-
-while(idx < len(num)):
-    print("seriese is",num[idx])
-    idx+=1
 
 
 # WAP to search the value in given seriese
@@ -78,22 +59,26 @@ else:
 
 # Break
 
-i=1
-while i<=5:
+i = 1
+while i <= 5:
     print(i)
-    if(i == 3):
+    if i == 3:
         break
-    i+=1
+    i += 1
+
 print("End of the loop")
+
 
 # Continue
 
-i=0
-while i<=6:
-    if(i ==4):
-        i+=1
-        continue #skip
+i = 0
+while i <= 6:
+    if i == 4:
+        i += 1
+        continue  # Skip 4
+
     print(i)
+    i += 1
 
 # WAP to print only odd number
 
@@ -110,34 +95,112 @@ while(num<=10):
 #  FOR LOOP
 #  loop are used for sequential travesal.For traeling list, string, tuples etc
 
-num = [1,2,3,4,5]
+# FOR LOOP
+# A for loop is used to visit (traverse) each item of a sequence one by one.
+# A sequence can be a list, string, tuple, etc.
 
-for val in num:
-    print(val)
-else:
+num = [1, 2, 3, 4, 5]      # Create a list containing five numbers.
+
+for val in num:            # Take one value from the list and store it in 'val'.
+    print(val)             # Print the current value.
+
+else:                      # This else runs after the loop finishes normally.
+    print("End")           # Print "End".
+
+
+Explanation - 
+Step-by-Step Execution
+
+Iteration 1
+
+val = 1
+print(val)
+
+Output:
+
+1
+
+Iteration 2
+
+val = 2
+print(val)
+
+Output:
+
+2
+
+Iteration 3
+
+val = 3
+print(val)
+
+Output:
+
+3
+
+Iteration 4
+
+val = 4
+print(val)
+
+Output:
+
+4
+
+Iteration 5
+
+val = 5
+print(val)
+
+Output:
+
+5
+
+Now the list is finished, so the else block runs.
+
+Output:
+
+End
+Final Output
+1
+2
+3
+4
+5
+End
+
+
+
+
+# WAP to search a character using a for loop.
+
+name = "sundram"              # Store the string.
+
+for char in name:             # Take one character at a time.
+
+    if(char == "d"):          # Check if the current character is 'd'.
+        print("Found")        # Print Found.
+        break                 # Stop the loop immediately.
+
+    print(char)               # Print the character if it is not 'd'.
+
+else:                         # Runs only if the loop finishes without break.
     print("End")
 
 
- # WAP to search string using for
-name = "sundram"
-
-for char in name:
-    if(char == "d"):
-        print(" found")
-        break
-    print(char)
-else:
-    print("End") # work that we want work till end of loop
 
 
-# WAP a program to search the num using for loop
+# WAP to search a number using a for loop.
 
-num = [1,4,6,8,9,2,4,0]
-search = int(input("Enter the val u want search"))
-idx =0
-for val in num:
-    if(val == search):
-        print(val,"found" )
-    idx+=1
+num = [1, 4, 6, 8, 9, 2, 4, 0]        # List of numbers.
 
+search = int(input("Enter the value you want to search: "))  # Take input.
 
+idx = 0                               # Start index from 0.
+
+for val in num:                       # Visit each number in the list.
+
+    if(val == search):                # Check whether current value matches.
+        print(val, "found at index", idx)   # Print the value and its index.
+
+    idx += 1                          # Move to the next index.
