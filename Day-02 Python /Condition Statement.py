@@ -1,163 +1,568 @@
- ### condition Statement
-
-"""
-Conditional Statements in Python
-
-Conditional statements are used to make decisions in a program. They help the computer choose what to do based on a condition.
-
-In simple words:
-
-“If something is true, do this; otherwise do something else.”
-
-1. if Statement
-
-Used when you want to execute code only if a condition is true.
-
-Syntax:
-if condition:
-    # code block
-Example:
-age = 18
-
-if age >= 18:
-    print("You are eligible to vote")
+ # ==========================================================
+#            DAY 2 - PYTHON PROGRAMMING
+#           Topic: Strings in Python
+#
+# In this lesson you will learn:
+#
+# ✅ What is a String?
+# ✅ String Indexing
+# ✅ Positive & Negative Indexing
+# ✅ String Slicing
+# ✅ Step Slicing
+# ✅ Reverse String
+# ✅ Escape Sequences
+# ✅ String Immutability
+# ✅ Membership Operators
+# ✅ Built-in String Functions
+# ==========================================================
 
 
+# ==========================================================
+#                WHAT IS A STRING?
+# ==========================================================
+
+# A String is a sequence of characters.
+
+# Characters can be:
+# • Letters
+# • Numbers
+# • Symbols
+# • Spaces
+
+text = "Python"
+
+print(text)
+
+# Output:
+# Python
 
 
+# ==========================================================
+#          CREATING STRINGS
+# ==========================================================
 
-2. if-else Statement
+# String using single quotes
 
-Used when you have two choices: one for true, one for false.
+str1 = 'Python'
 
-Syntax:
-if condition:
-    # true block
-else:
-    # false block
-Example:
-age = 16
+# String using double quotes
 
-if age >= 18:
-    print("Eligible to vote")
-else:
-    print("Not eligible to vote")
+str2 = "Programming"
 
+# Multi-line String
 
+str3 = """Welcome
+to
+Python"""
 
-
-
-3. if-elif-else Statement
-
-Used when there are multiple conditions.
-
-Syntax:
-if condition1:
-    # code
-elif condition2:
-    # code
-else:
-    # code
-Example:
-marks = 75
-
-if marks >= 90:
-    print("Grade A")
-elif marks >= 75:
-    print("Grade B")
-elif marks >= 50:
-    print("Grade C")
-else:
-    print("Fail")
+print(str1)
+print(str2)
+print(str3)
 
 
+# ==========================================================
+#                 STRING INDEXING
+# ==========================================================
+
+# Every character has a position called an Index.
+
+#            P   y   t   h   o   n
+# Index      0   1   2   3   4   5
+
+text = "Python"
+
+print(text[0])
+
+# Output:
+# P
+
+print(text[3])
+
+# Output:
+# h
+
+print(text[5])
+
+# Output:
+# n
 
 
+# ==========================================================
+#             NEGATIVE INDEXING
+# ==========================================================
 
-4. Nested if Statement
+# Python also counts from the end.
 
-An if inside another if.
+#             P   y   t   h   o   n
+# Index      -6 -5  -4  -3  -2  -1
 
-Example:
-age = 20
-citizenship = "India"
+print(text[-1])
 
-if age >= 18:
-    if citizenship == "India":
-        print("You can vote in India")
-    else:
-        print("You are not an Indian citizen")
-else:
-    print("Too young to vote")
+# Output:
+# n
 
+print(text[-2])
 
-"""
+# Output:
+# o
 
+print(text[-6])
 
-
-
-
-# if- elif-else (SYNTAX)
-
-# Traffic light code
+# Output:
+# P
 
 
-print("saw your traffic light ")
+# ==========================================================
+#            STRING LENGTH
+# ==========================================================
 
-color = input("Enter Traffic light color ")
+print(len(text))
 
-if(color=="red"):
-    print("Red light stop")
-elif(color=="green"):
-    print("Green light Go")
-elif(color == "orange"):
-    print("ready to go")
-else:
-    print("Light is broken")
+# Output:
+# 6
 
+# Highest Positive Index
 
+print(len(text)-1)
 
-
-#2nd program student marks
-
-marks= input(print("Enter you marks "))
-
-if(marks == 90):
-    print("Grade A")
-elif(marks == 80 and marks >90):
-    print("Grade B")
-else:
-    print("lower Grade ")
+# Output:
+# 5
 
 
-# If I have to wrote f statement in single line 
-# Ternary operator
-# <var> = < val1> if <condition>else <val2> 
+# ==========================================================
+#                 STRING SLICING
+# ==========================================================
 
-food = input("wrote your food if it sweet or jalebi ")
-print("sweet") if food == "jalebi" or food == "mango" else print("no taste")
+# Syntax
+
+# string[start:end]
+
+# start → Included
+# end → Excluded
+
+text = "Python Programming"
+
+print(text[0:6])
+
+# Output:
+# Python
+
+print(text[7:18])
+
+# Output:
+# Programming
+
+print(text[:6])
+
+# Output:
+# Python
+
+print(text[7:])
+
+# Output:
+# Programming
+
+print(text[:])
+
+# Output:
+# Python Programming
 
 
-# Clever if / Ternary Operator
+# ==========================================================
+#          SLICING WITH STEP
+# ==========================================================
 
-#<var> = (false_val, true_al) [<condition>]
+# Syntax
 
-age = int(input("Enter your age "))
-vote = ("12","18") [age<=18]
-print("you can do vote")
+# string[start:end:step]
+
+text = "Python"
+
+print(text[0:6:2])
+
+# Output:
+# Pto
+
+# It skips one character every time.
 
 
-sal=float(input("Enter your salary "))
-total= sal*(0.1,0.2) [sal>40000]
-print("good")
+print(text[::2])
+
+# Output:
+# Pto
 
 
-# Nested if
+print(text[1::2])
 
-age = 34
+# Output:
+# yhn
 
-if(age>=18):
-    if(age>=80):
-        print("can not drive ")
-    else:
-        print("can drive ")
+
+# ==========================================================
+#            REVERSE A STRING
+# ==========================================================
+
+text = "Python"
+
+print(text[::-1])
+
+# Output:
+# nohtyP
+
+# Explanation
+
+# Start from end
+# Move backward one character
+
+
+# ==========================================================
+#             NEGATIVE SLICING
+# ==========================================================
+
+text = "Language"
+
+print(text[-5:-2])
+
+# Output:
+# gua
+
+
+# ==========================================================
+#         INDEXING vs SLICING
+# ==========================================================
+
+# Indexing
+
+print(text[2])
+
+# Output:
+# n
+
+# Slicing
+
+print(text[2:5])
+
+# Output:
+# ngu
+
+
+# ==========================================================
+#            STRING IMMUTABILITY
+# ==========================================================
+
+# Strings cannot be changed.
+
+text = "Python"
+
+# This is NOT allowed.
+
+# text[0] = "J"
+
+# It gives an error.
+
+# Instead create a new string.
+
+text = "J" + text[1:]
+
+print(text)
+
+# Output:
+# Jython
+
+
+# ==========================================================
+#             ESCAPE SEQUENCES
+# ==========================================================
+
+print("Hello\nPython")
+
+# \n means New Line
+
+print("Hello\tPython")
+
+# \t means Tab Space
+
+print("He said \"Hello\"")
+
+# \" prints double quote
+
+print("C:\\Users\\Admin")
+
+# \\ prints one backslash
+
+
+# ==========================================================
+#         MEMBERSHIP OPERATORS
+# ==========================================================
+
+text = "Python"
+
+print("Py" in text)
+
+# Output:
+# True
+
+print("Java" in text)
+
+# Output:
+# False
+
+print("Java" not in text)
+
+# Output:
+# True
+
+
+# ==========================================================
+#          STRING FUNCTIONS
+# ==========================================================
+
+text = "python programming"
+
+print(text.upper())
+
+# PYTHON PROGRAMMING
+
+print(text.lower())
+
+# python programming
+
+print(text.capitalize())
+
+# Python programming
+
+print(text.title())
+
+# Python Programming
+
+print(text.swapcase())
+
+# PYTHON PROGRAMMING
+
+
+# ==========================================================
+#             startswith()
+# ==========================================================
+
+print(text.startswith("python"))
+
+# True
+
+print(text.startswith("Java"))
+
+# False
+
+
+# ==========================================================
+#             endswith()
+# ==========================================================
+
+print(text.endswith("ming"))
+
+# True
+
+print(text.endswith("Java"))
+
+# False
+
+
+# ==========================================================
+#               replace()
+# ==========================================================
+
+print(text.replace("python","Java"))
+
+# Java programming
+
+
+# ==========================================================
+#                 find()
+# ==========================================================
+
+print(text.find("program"))
+
+# 7
+
+print(text.find("Java"))
+
+# -1
+
+
+# ==========================================================
+#                count()
+# ==========================================================
+
+print(text.count("m"))
+
+# 2
+
+
+# ==========================================================
+#            isalpha()
+# ==========================================================
+
+print("Python".isalpha())
+
+# True
+
+print("Python123".isalpha())
+
+# False
+
+
+# ==========================================================
+#            isdigit()
+# ==========================================================
+
+print("12345".isdigit())
+
+# True
+
+print("12A".isdigit())
+
+# False
+
+
+# ==========================================================
+#             isalnum()
+# ==========================================================
+
+print("Python123".isalnum())
+
+# True
+
+print("Python 123".isalnum())
+
+# False
+
+
+# ==========================================================
+#            strip()
+# ==========================================================
+
+text = "   Python   "
+
+print(text.strip())
+
+# Python
+
+
+# ==========================================================
+#        COMMON BEGINNER MISTAKES
+# ==========================================================
+
+# Wrong
+
+# text = "Python"
+# text[0] = "J"
+
+# ❌ Error
+
+# Correct
+
+text = "J" + text[1:]
+
+
+# Wrong
+
+# print(text[50])
+
+# ❌ IndexError
+
+# Always make sure the index exists.
+
+
+# ==========================================================
+#              MINI PRACTICE PROGRAMS
+# ==========================================================
+
+# Program 1
+# Print first and last character.
+
+name = "Sundram"
+
+print(name[0])
+
+print(name[-1])
+
+# -------------------------------
+
+# Program 2
+# Reverse your name.
+
+print(name[::-1])
+
+# -------------------------------
+
+# Program 3
+# Print every second character.
+
+print(name[::2])
+
+# -------------------------------
+
+# Program 4
+# Count letter 'a'
+
+print(name.count("a"))
+
+
+# ==========================================================
+#              PRACTICE QUESTIONS
+# ==========================================================
+
+# Q1 Print first character of your name.
+
+# Q2 Print last character of your name.
+
+# Q3 Reverse your name.
+
+# Q4 Print every second character.
+
+# Q5 Find length of your city name.
+
+# Q6 Check if your name starts with "S".
+
+# Q7 Check if your city ends with "i".
+
+# Q8 Replace your city with another city.
+
+# Q9 Count how many times "a" appears in your name.
+
+# Q10 Convert your name into uppercase.
+
+
+# ==========================================================
+#                 DAY 2 SUMMARY
+# ==========================================================
+
+# Today you learned:
+#
+# ✅ What is a String?
+# ✅ Creating Strings
+# ✅ Positive Indexing
+# ✅ Negative Indexing
+# ✅ len()
+# ✅ String Slicing
+# ✅ Step Slicing
+# ✅ Reverse String
+# ✅ Escape Sequences
+# ✅ String Immutability
+# ✅ Membership Operators (in, not in)
+# ✅ startswith()
+# ✅ endswith()
+# ✅ replace()
+# ✅ find()
+# ✅ count()
+# ✅ upper()
+# ✅ lower()
+# ✅ capitalize()
+# ✅ title()
+# ✅ swapcase()
+# ✅ strip()
+# ✅ isalpha()
+# ✅ isdigit()
+# ✅ isalnum()
+
+# 🎉 Congratulations!
+# You have completed the complete String chapter of Day 2.
