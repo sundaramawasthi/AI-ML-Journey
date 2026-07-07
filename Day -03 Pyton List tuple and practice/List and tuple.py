@@ -1,163 +1,657 @@
-#📘 Topic: Lists and Tuples in Python
+# ==========================================================
+#            DAY 3 - PYTHON PROGRAMMING
+#          Topic: Lists and Tuples in Python
+# ==========================================================
 
-#Today we will understand two very important data structures in Python:
-
-#List
-#Tuple
-
-#These are used to store multiple values in a single variable.
-
-#🟢 1. LIST in Python
-#📌 What is a List?
-
-#A list is a built-in data type in Python that can store a collection of values.
-
-#⭐ Key Features:
-#Lists are mutable → means we can change them after creation
-#an store different data types together
-#(integer, string, float, etc.)
-#Ordered (indexing is possible)
-#🔥 Example of List
-property = [200, 300, 600, 700]
-property[0] = "sundram"  # modifying list (mutable)
-
-print("List of property is =", property)
-print("Type of property is =", type(property))
-print("Access index 1 =", property[1])
-print("Length of list =", len(property))
-
-#🧠 Explanation:
-#property[0] = "sundram" → we changed value at index 0
-#type() → tells the data type (list)
-#property[1] → gives element at index 1
-#len() → gives total number of elements
+# In this lesson, you will learn:
+#
+# ✅ What is a List?
+# ✅ Creating Lists
+# ✅ Accessing List Elements
+# ✅ Updating Lists
+# ✅ List Slicing
+# ✅ List Methods
+# ✅ What is a Tuple?
+# ✅ Tuple Indexing
+# ✅ Tuple Slicing
+# ✅ Tuple Methods
+# ✅ Difference Between List and Tuple
 
 
+# ==========================================================
+#              WHAT IS A LIST?
+# ==========================================================
 
-#✂️ 2. Slicing in List
+# A List is a built-in data type in Python
+# used to store multiple values inside a
+# single variable.
 
-#Slicing means getting a part of the list.
+# Example:
+#
+# Instead of creating many variables,
+#
+# marks1 = 90
+# marks2 = 85
+# marks3 = 78
+#
+# We can store them inside one list.
 
-student = ["mohan", 67, "delhi"]
+marks = [90, 85, 78]
 
-print("Whole list =", student)
-print("Slicing [1:3] =", student[1:3])
+print(marks)
 
-#🧠 Explanation:
-#Index starts from 0
-#[1:3] means:
-#start from index 1
-#go till index 3 (but 3 is NOT included)
-
-#So output will be:
-
-[67, 'delhi']
-
-#🛠️ 3. Methods in List
-#➤ append()
-
-#Used to add an element at the end of the list.
-
-collection = ["name", "sundram", "age", 18, "place"]
-
-collection.append("Delhi")
-
-print(collection)
-
-#🧠 Meaning:
-
-#Adds "Delhi" at the last position.
-
-#➤ sort()
-
-#Used to arrange elements in ascending order.
-
-num = [45, 67, 23, 90]
-
-num.sort()
-print(num)
-
-#🧠 Output:
-[23, 45, 67, 90]
-#➤ reverse sort
-num.sort(reverse=True)
-print(num)
-#🧠 Output:
-[90, 67, 45, 23]
-#➤ Sorting characters
-alpha = ['a', 'd', 't', 'e', 'g', 't']
-
-alpha.sort()
-print(alpha)
+# Output:
+# [90, 85, 78]
 
 
-#🧠 Output:
+# ==========================================================
+#            FEATURES OF A LIST
+# ==========================================================
 
-#Alphabetically sorted list.
+# ✅ Ordered
+# Elements have indexes.
 
-#➤ reverse()
+# ✅ Mutable
+# We can change elements after creation.
 
-#Reverses the whole list (not sorting)
+# ✅ Stores Multiple Data Types
+# Integer, Float, String, Boolean, etc.
 
-num = [45, 'y', 6]
-num.reverse()
-print(num)
+# ✅ Allows Duplicate Values
+
+# Example
+
+student = ["Sundram", 22, 89.5, True]
+
+print(student)
+
+# Output:
+# ['Sundram', 22, 89.5, True]
 
 
-#➤ insert()
+# ==========================================================
+#             CREATING A LIST
+# ==========================================================
 
-#Used to insert element at specific position.
+property_list = [200, 300, 600, 700]
 
-num.insert(0, 4)
-#🧠 Meaning:
+print(property_list)
 
-#Insert 4 at index 0
+print(type(property_list))
 
-#➤ remove()
+# Output:
+# <class 'list'>
 
-#Removes first occurrence of an element.
 
-num.remove(45)
-#➤ pop()
+# ==========================================================
+#           ACCESSING LIST ELEMENTS
+# ==========================================================
 
-#Removes element from a specific index.
+# Indexing starts from 0.
 
-num.pop(2)
+# Index:
+#
+# 200  300  600  700
+#  0    1    2    3
 
-#🔵 4. TUPLE in Python
-#📌 What is a Tuple?
+print(property_list[0])
 
-#A tuple is similar to a list but:
+# Output:
+# 200
 
-#⭐ Key Difference:
-#Tuples are immutable → cannot be changed after creation
-#🔥 Example
+print(property_list[2])
+
+# Output:
+# 600
+
+print(property_list[-1])
+
+# Output:
+# 700
+
+
+# ==========================================================
+#             MODIFYING A LIST
+# ==========================================================
+
+# Lists are Mutable.
+#
+# That means we can change values.
+
+property_list[0] = "Sundram"
+
+print(property_list)
+
+# Output:
+# ['Sundram', 300, 600, 700]
+
+
+# ==========================================================
+#              LENGTH OF A LIST
+# ==========================================================
+
+print(len(property_list))
+
+# Output:
+# 4
+
+# len() returns the total number of elements.
+
+
+# ==========================================================
+#              LIST SLICING
+# ==========================================================
+
+student = ["Mohan", 67, "Delhi", True]
+
+print(student)
+
+# Syntax:
+#
+# list[start:end]
+
+print(student[1:3])
+
+# Output:
+# [67, 'Delhi']
+
+# Explanation:
+#
+# Start = 1 (Included)
+#
+# End = 3 (Excluded)
+
+
+print(student[:2])
+
+# Output:
+# ['Mohan', 67]
+
+
+print(student[2:])
+
+# Output:
+# ['Delhi', True]
+
+
+print(student[:])
+
+# Output:
+# Entire List
+
+
+# ==========================================================
+#             LIST METHODS
+# ==========================================================
+
+# Python provides many useful methods
+# for working with lists.
+
+
+# ==========================================================
+#               append()
+# ==========================================================
+
+# append() adds an element at the end.
+
+cities = ["Lucknow", "Delhi"]
+
+cities.append("Mumbai")
+
+print(cities)
+
+# Output:
+# ['Lucknow', 'Delhi', 'Mumbai']
+
+
+# ==========================================================
+#                insert()
+# ==========================================================
+
+# insert(index, value)
+
+cities.insert(1, "Kanpur")
+
+print(cities)
+
+# Output:
+# ['Lucknow', 'Kanpur', 'Delhi', 'Mumbai']
+
+
+# ==========================================================
+#                extend()
+# ==========================================================
+
+# extend() joins two lists.
+
+list1 = [1, 2]
+
+list2 = [3, 4]
+
+list1.extend(list2)
+
+print(list1)
+
+# Output:
+# [1, 2, 3, 4]
+
+
+# ==========================================================
+#                 sort()
+# ==========================================================
+
+numbers = [45, 67, 23, 90]
+
+numbers.sort()
+
+print(numbers)
+
+# Output:
+# [23, 45, 67, 90]
+
+# sort() arranges elements
+# in ascending order.
+
+
+# ==========================================================
+#          SORT IN DESCENDING ORDER
+# ==========================================================
+
+numbers.sort(reverse=True)
+
+print(numbers)
+
+# Output:
+# [90, 67, 45, 23]
+
+
+# ==========================================================
+#          SORTING STRINGS
+# ==========================================================
+
+letters = ["a", "d", "t", "e", "g"]
+
+letters.sort()
+
+print(letters)
+
+# Output:
+# ['a', 'd', 'e', 'g', 't']
+
+
+# ==========================================================
+#               reverse()
+# ==========================================================
+
+# reverse() only reverses
+# the current order.
+
+numbers = [10, 20, 30, 40]
+
+numbers.reverse()
+
+print(numbers)
+
+# Output:
+# [40, 30, 20, 10]
+
+# Note:
+#
+# reverse() does NOT sort.
+
+
+# ==========================================================
+#                remove()
+# ==========================================================
+
+numbers = [10, 20, 30, 20]
+
+numbers.remove(20)
+
+print(numbers)
+
+# Output:
+# [10, 30, 20]
+
+# remove() deletes only
+# the FIRST occurrence.
+
+
+# ==========================================================
+#                  pop()
+# ==========================================================
+
+numbers = [10, 20, 30, 40]
+
+numbers.pop(2)
+
+print(numbers)
+
+# Output:
+# [10, 20, 40]
+
+# pop(index) removes an element
+# using its index.
+
+# If no index is given,
+# pop() removes the last element.
+
+numbers.pop()
+
+print(numbers)
+
+# Output:
+# [10, 20]
+
+
+# ==========================================================
+#                 clear()
+# ==========================================================
+
+numbers.clear()
+
+print(numbers)
+
+# Output:
+# []
+
+
+# ==========================================================
+#                 copy()
+# ==========================================================
+
+list1 = [10, 20, 30]
+
+list2 = list1.copy()
+
+print(list2)
+
+# Output:
+# [10, 20, 30]
+
+
+# ==========================================================
+#           MEMBERSHIP OPERATORS
+# ==========================================================
+
+fruits = ["Apple", "Banana", "Mango"]
+
+print("Apple" in fruits)
+
+# True
+
+print("Orange" in fruits)
+
+# False
+
+
+# ==========================================================
+#             LOOP THROUGH A LIST
+# ==========================================================
+
+fruits = ["Apple", "Banana", "Mango"]
+
+for fruit in fruits:
+    print(fruit)
+
+# Output:
+# Apple
+# Banana
+# Mango
+
+
+# ==========================================================
+#               COMMON MISTAKES
+# ==========================================================
+
+# Wrong
+
+# fruits[10]
+
+# ❌ IndexError
+
+# Always make sure the
+# index exists.
+
+
+# ==========================================================
+#             WHAT IS A TUPLE?
+# ==========================================================
+
+# A Tuple is also used to store
+# multiple values.
+
+# But unlike lists...
+
+# Tuples are Immutable.
+
+# Immutable means
+# they cannot be changed.
+
 tup = (2, 4, 6, 7, 5)
 
-print("Element at index 2 =", tup[2])
-print("Type =", type(tup[2]))
+print(tup)
 
-#✂️ Slicing in Tuple
-print("Slicing [1:3] =", tup[1:3])
-#🛠️ Methods in Tuple
+print(type(tup))
 
-#➤ index()
+# Output:
+# <class 'tuple'>
 
-#Returns index of first occurrence of element.
 
-print(tup.index(2))
-#➤ count()
+# ==========================================================
+#            ACCESSING TUPLE ELEMENTS
+# ==========================================================
 
-#Counts how many times an element appears.
+print(tup[2])
 
-print(tup.count(2))
-"""
-#📌 Final Summary
-Feature	List	Tuple
-Mutable	Yes	No
-Syntax	[ ]	( )
-Methods	Many	Limited
-Performance	Slower	Faster
-🎯 One-Line Concept
-List = Flexible (changeable collection)
-Tuple = Fixed (unchangeable collection)"""
+# Output:
+# 6
+
+print(tup[-1])
+
+# Output:
+# 5
+
+
+# ==========================================================
+#             TUPLE SLICING
+# ==========================================================
+
+print(tup[1:4])
+
+# Output:
+# (4, 6, 7)
+
+
+# ==========================================================
+#          TUPLE IS IMMUTABLE
+# ==========================================================
+
+# This is NOT allowed.
+
+# tup[0] = 100
+
+# ❌ Error
+
+# Tuples cannot be modified.
+
+
+# ==========================================================
+#             TUPLE METHODS
+# ==========================================================
+
+numbers = (2, 4, 6, 2, 8)
+
+# index()
+
+print(numbers.index(6))
+
+# Output:
+# 2
+
+# count()
+
+print(numbers.count(2))
+
+# Output:
+# 2
+
+
+# ==========================================================
+#       SPECIAL CASE - SINGLE VALUE TUPLE
+# ==========================================================
+
+# Wrong
+
+a = (5)
+
+print(type(a))
+
+# Output:
+# <class 'int'>
+
+# Correct
+
+b = (5,)
+
+print(type(b))
+
+# Output:
+# <class 'tuple'>
+
+# The comma is compulsory.
+
+
+# ==========================================================
+#      DIFFERENCE BETWEEN LIST AND TUPLE
+# ==========================================================
+
+# LIST
+#
+# • Uses []
+# • Mutable
+# • Many methods
+# • Slightly slower
+# • Good when data changes
+
+# TUPLE
+#
+# • Uses ()
+# • Immutable
+# • Few methods
+# • Faster
+# • Good when data should not change
+
+
+# ==========================================================
+#           MINI PRACTICE PROGRAMS
+# ==========================================================
+
+# Program 1
+# Create a list of fruits.
+
+fruits = ["Apple", "Banana", "Mango"]
+
+print(fruits)
+
+# ------------------------------
+
+# Program 2
+# Change Banana to Orange.
+
+fruits[1] = "Orange"
+
+print(fruits)
+
+# ------------------------------
+
+# Program 3
+# Add Grapes.
+
+fruits.append("Grapes")
+
+print(fruits)
+
+# ------------------------------
+
+# Program 4
+# Remove Apple.
+
+fruits.remove("Apple")
+
+print(fruits)
+
+# ------------------------------
+
+# Program 5
+# Create a tuple.
+
+colors = ("Red", "Green", "Blue")
+
+print(colors)
+
+
+# ==========================================================
+#             PRACTICE QUESTIONS
+# ==========================================================
+
+# Q1 Create a list of five fruits.
+
+# Q2 Print the first and last element.
+
+# Q3 Change the second fruit.
+
+# Q4 Add a new fruit using append().
+
+# Q5 Remove one fruit using remove().
+
+# Q6 Sort a list of numbers.
+
+# Q7 Reverse the list.
+
+# Q8 Create a tuple of five numbers.
+
+# Q9 Print the third element of the tuple.
+
+# Q10 Find the index of an element using index().
+
+# Q11 Count how many times 5 appears in a tuple.
+
+# Q12 What is the difference between List and Tuple?
+
+
+# ==========================================================
+#                 DAY 3 SUMMARY
+# ==========================================================
+
+# Today you learned:
+#
+# ✅ What is a List?
+# ✅ Features of Lists
+# ✅ Creating Lists
+# ✅ Indexing
+# ✅ Slicing
+# ✅ Updating Lists
+# ✅ append()
+# ✅ insert()
+# ✅ extend()
+# ✅ sort()
+# ✅ reverse()
+# ✅ remove()
+# ✅ pop()
+# ✅ clear()
+# ✅ copy()
+# ✅ Membership Operators (in, not in)
+# ✅ Looping through Lists
+# ✅ What is a Tuple?
+# ✅ Tuple Indexing
+# ✅ Tuple Slicing
+# ✅ Tuple Methods
+#     • index()
+#     • count()
+# ✅ Single-Element Tuple
+# ✅ Difference Between List and Tuple
+
+# 🎉 Congratulations!
+# You have successfully completed
+# Lists and Tuples in Python.
