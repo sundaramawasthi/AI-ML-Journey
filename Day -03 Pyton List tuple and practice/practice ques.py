@@ -1,141 +1,272 @@
-# WAP to input user's first name and print its length
+# ==========================================================
+#           DAY 3 - PRACTICE QUESTIONS
+#        Topic: Strings, Conditions, Lists & Tuples
+# ==========================================================
 
-name = input("write your name ")
-print("length of your name is",len(name),"your name is ", name)
-
-
-# WAP to find the occurrence of '$' in a string.
-
-name = input("write your string ")
-print("occurrence of '$' in the string is ", name.count("$"))
-
-#WAP that tell today rain going to happen or not.
-
-cloud = input("Enter the condition of cloud rainy or sun ")
-air = input("Enter the Air condition flowing or stop ")
-
-if(cloud == "rainy" and air == "flowing"):
-    print("rain happen")
-elif(cloud == "sun" and air == "stop"):
-    print("rain not happen")
-elif( cloud == "rainy" or air == "flowing"):
-    print("May be rain happens")
+# In this practice file, you will revise:
+#
+# ✅ Strings
+# ✅ String Functions
+# ✅ if-else
+# ✅ Logical Operators
+# ✅ Lists
+# ✅ Tuples
+# ✅ List Methods
 
 
+# ==========================================================
+# QUESTION 1
+# WAP to input the user's first name
+# and print its length.
+# ==========================================================
+
+name = input("Enter your first name: ")
+
+print("Your name is:", name)
+
+print("Length of your name is:", len(name))
 
 
-# WAP to check if a number entered by the user is odd or even
-num = int(input("Enter any number"))
+# ==========================================================
+# QUESTION 2
+# WAP to count the occurrence of '$'
+# in a string.
+# ==========================================================
 
-print("Even" if num%2 == 0 else "odd")
+text = input("Enter any string: ")
+
+print("Number of '$' symbols =", text.count("$"))
 
 
+# ==========================================================
+# QUESTION 3
+# WAP to check whether a number
+# is even or odd.
+# ==========================================================
 
+number = int(input("Enter any number: "))
 
-#WAP to find the greatest of 3 number entered by the user.
+if number % 2 == 0:
+    print(number, "is an Even Number.")
 
-num1 = int(input("Enter 1st number"))
-num2= int(input("Enter 2nd number"))
-num3 = int(input("Enter 3rd number"))
-
-if(num1>num2 and num1>num3):
-    print("greatest number is =",num1)
 else:
-    if(num2>num1 and num2>num3):
-        print("greatest number is = ", num2)
-    else:
-        print("Greatest number is = ", num3)
+    print(number, "is an Odd Number.")
 
 
-#WAP to check f a number is aa multiple of 7 or not 
+# ==========================================================
+# QUESTION 4
+# WAP to find the greatest
+# among three numbers.
+# ==========================================================
 
-num = int(input("Enter any number "))
+num1 = int(input("Enter First Number: "))
 
-if(num%7 == 0):
-    print("number is multiple of 7", num)
+num2 = int(input("Enter Second Number: "))
+
+num3 = int(input("Enter Third Number: "))
+
+if num1 >= num2 and num1 >= num3:
+
+    print("Greatest Number =", num1)
+
+elif num2 >= num1 and num2 >= num3:
+
+    print("Greatest Number =", num2)
+
 else:
-    print("number is not a multiple of 7",num)
+
+    print("Greatest Number =", num3)
 
 
+# ==========================================================
+# QUESTION 5
+# WAP to check whether a number
+# is a multiple of 7.
+# ==========================================================
 
-#WAP to ask the user to enter names of their 3 fa moie and store them in a list.
+number = int(input("Enter any number: "))
 
-movie1 = str ( input("Enter your 1st movie name "))
-movie2 = str (input("Enter your 2nd  movie name "))
-movie3 = str (input("Enter your 3rd  movie name "))
+if number % 7 == 0:
 
-final = [movie1,movie2,movie3]
+    print(number, "is a multiple of 7.")
 
-print("our new list is =",final)
-
-# WAP to check if a list contains a palindrome of elements
-
-list1 = [1,2,1]
-
-# copy function use to copy the given list
-copy_list1 = list1.copy()
-copy_list1.reverse()
-
-if(list1 == copy_list1):
-    print("pailandrome")
 else:
-    print("Not pailandrome")
+
+    print(number, "is NOT a multiple of 7.")
 
 
+# ==========================================================
+# QUESTION 6
+# WAP to ask the user to enter
+# the names of their 3 favourite movies
+# and store them in a list.
+# ==========================================================
 
-# WAP to count the number of students with the "A" grade in following tuple
+movie1 = input("Enter Movie 1: ")
 
-grade = ["C","D","E","A","F","A","G"]
+movie2 = input("Enter Movie 2: ")
 
-print("Number of A in the tup is ", grade.count("A"))
+movie3 = input("Enter Movie 3: ")
 
-print(type(grade))
+movies = [movie1, movie2, movie3]
 
-# WAP to store the above values in a list and sort them from A to D
-
-grade.sort()
-print(grade)
+print("Favourite Movies =", movies)
 
 
+# ==========================================================
+# QUESTION 7
+# WAP to check whether a list
+# is a palindrome.
+# ==========================================================
 
+numbers = [1, 2, 3, 2, 1]
 
-#WAP to ask the user to enter names of their 3 fa moie and store them in a list.
+copy_numbers = numbers.copy()
 
-movie1 = str ( input("Enter your 1st movie name "))
-movie2 = str (input("Enter your 2nd  movie name "))
-movie3 = str (input("Enter your 3rd  movie name "))
+copy_numbers.reverse()
 
-final = [movie1,movie2,movie3]
+if numbers == copy_numbers:
 
-print("our new list is =",final)
+    print("The list is a Palindrome.")
 
-# WAP to check if a list contains a palindrome of elements
-
-list1 = [1,2,1]
-
-# copy function use to copy the given list
-copy_list1 = list1.copy()
-copy_list1.reverse()
-
-if(list1 == copy_list1):
-    print("pailandrome")
 else:
-    print("Not pailandrome")
+
+    print("The list is NOT a Palindrome.")
 
 
+# ==========================================================
+# QUESTION 8
+# WAP to count the number of students
+# who got Grade 'A'.
+# ==========================================================
 
-# WAP to count the number of students with the "A" grade in following tuple
+grades = ("C", "D", "E", "A", "F", "A", "G")
 
-grade = ["C","D","E","A","F","A","G"]
-
-print("Number of A in the tup is ", grade.count("A"))
-
-print(type(grade))
-
-# WAP to store the above values in a list and sort them from A to D
-
-grade.sort()
-print(grade)
+print("Number of students with Grade A =", grades.count("A"))
 
 
+# ==========================================================
+# QUESTION 9
+# Store the grades in a list
+# and sort them alphabetically.
+# ==========================================================
 
+grades = ["C", "D", "E", "A", "F", "A", "G"]
+
+grades.sort()
+
+print("Sorted Grades =", grades)
+
+
+# ==========================================================
+# QUESTION 10
+# WAP to check whether a given word
+# starts with the letter 'P'.
+# ==========================================================
+
+word = input("Enter any word: ")
+
+if word.startswith("P"):
+
+    print("The word starts with 'P'.")
+
+else:
+
+    print("The word does not start with 'P'.")
+
+
+# ==========================================================
+# QUESTION 11
+# WAP to check whether a given word
+# ends with the letter 'n'.
+# ==========================================================
+
+word = input("Enter any word: ")
+
+if word.endswith("n"):
+
+    print("The word ends with 'n'.")
+
+else:
+
+    print("The word does not end with 'n'.")
+
+
+# ==========================================================
+# QUESTION 12
+# WAP to print the first and last
+# character of a string.
+# ==========================================================
+
+text = input("Enter any string: ")
+
+print("First Character =", text[0])
+
+print("Last Character =", text[-1])
+
+
+# ==========================================================
+# QUESTION 13
+# WAP to reverse a string.
+# ==========================================================
+
+text = input("Enter any string: ")
+
+print("Reverse String =", text[::-1])
+
+
+# ==========================================================
+# QUESTION 14
+# WAP to count the number of vowels
+# in a string.
+# ==========================================================
+
+text = input("Enter any string: ")
+
+count = 0
+
+for ch in text.lower():
+
+    if ch in "aeiou":
+
+        count += 1
+
+print("Total Vowels =", count)
+
+
+# ==========================================================
+# QUESTION 15
+# WAP to create a list of 5 numbers
+# and print the largest number.
+# ==========================================================
+
+numbers = [15, 42, 8, 97, 36]
+
+print("Largest Number =", max(numbers))
+
+
+# ==========================================================
+#              DAY 3 PRACTICE SUMMARY
+# ==========================================================
+
+# After completing these questions,
+# you should be able to:
+#
+# ✅ Take input from the user
+# ✅ Work with Strings
+# ✅ Use String Functions
+# ✅ Use if-else statements
+# ✅ Compare numbers
+# ✅ Check Even/Odd
+# ✅ Check Multiples
+# ✅ Create Lists
+# ✅ Modify Lists
+# ✅ Check Palindrome
+# ✅ Work with Tuples
+# ✅ Count Tuple Elements
+# ✅ Sort Lists
+# ✅ Reverse Strings
+# ✅ Find Largest Number
+#
+# 🎉 Congratulations!
+# You have completed the Day 3 Practice Questions.
