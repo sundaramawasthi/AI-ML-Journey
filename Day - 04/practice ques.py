@@ -1,54 +1,250 @@
- # WAP store following word meanings in a python dictionary
+# ==========================================================
+#          DAY 4 - PRACTICE QUESTIONS
+#      Topic: Dictionary and Set in Python
+# ==========================================================
 
-# table ; "a piece of furniture" , "list of facts and figures"
-# cat : "a small animal"
+# In this practice file, you will revise:
+#
+# ✅ Dictionary
+# ✅ Nested Values
+# ✅ Dictionary Methods
+# ✅ Set
+# ✅ Unique Values
+# ✅ User Input
 
-collection = {
-    "cat" :" a small animal",
-    "table " : ["a piece of furniture ","list of fact and figures"]
+
+# ==========================================================
+# QUESTION 1
+# WAP to store the following word meanings
+# in a Python Dictionary.
+#
+# table :
+#     "A piece of furniture"
+#     "A list of facts and figures"
+#
+# cat :
+#     "A small animal"
+# ==========================================================
+
+dictionary = {
+
+    "table": [
+
+        "A piece of furniture",
+
+        "A list of facts and figures"
+
+    ],
+
+    "cat": "A small animal"
+
 }
 
-print(collection)
+print(dictionary)
 
 
-# You are given a list of subjects for students. Assume one classroom is
-# required for 1 subject. How many classrooms are needed by all studensts.
- 
+# ==========================================================
+# QUESTION 2
+# You are given a list of subjects.
+#
+# Assume one classroom is required
+# for one UNIQUE subject.
+#
+# Find the total number of classrooms
+# required.
+# ==========================================================
 
-classroom = {"java","python", "script", "java,","C++"
+subjects = {
+
+    "Python",
+
+    "Java",
+
+    "Java",
+
+    "C++",
+
+    "Python",
+
+    "JavaScript"
+
 }
-print("Total subjects are",classroom)        
-print("Total subject required",len(classroom))    
+
+print("Subjects =", subjects)
+
+print("Total Classrooms Required =", len(subjects))
+
+# Explanation:
+#
+# A Set automatically removes
+# duplicate values.
+#
+# So only unique subjects remain.
 
 
-# WAP to enter marks of 3 subjects from the user and storee them in a dictionary
-# Start with an empty dict and add one by one. Use subject name as key and marks
-# as value
+# ==========================================================
+# QUESTION 3
+# WAP to enter the marks of
+# three subjects from the user
+# and store them in a Dictionary.
+#
+# Use:
+# Subject Name -> Key
+# Marks -> Value
+# ==========================================================
 
 marks = {}
 
-x = int(input("Enter computer marks:  "))
-marks.update({"computer" : x })
+computer = int(input("Enter Computer Marks: "))
+
+marks["Computer"] = computer
+
+math = int(input("Enter Math Marks: "))
+
+marks["Math"] = math
+
+python = int(input("Enter Python Marks: "))
+
+marks["Python"] = python
+
+print("Student Marks =", marks)
 
 
-x = int(input("Enter math marks:  "))
-marks.update({"math" : x })
+# ==========================================================
+# QUESTION 4
+# Can Python store 9 and 9.0
+# as separate values inside a Set?
+# ==========================================================
 
-y = int(input("Enter python marks:  "))
-marks.update({"python" : y })
+numbers = {9, 9.0}
 
-print(" Our updated list is",marks)
+print(numbers)
+
+print("Length of Set =", len(numbers))
+
+# Output:
+#
+# {9}
+#
+# Length = 1
+#
+# Explanation:
+#
+# Python considers
+# 9 and 9.0 equal.
+#
+# Therefore,
+# only one value is stored.
 
 
-# WAP Figure out a way to store 9 and 9.0 as separate values in the set
+# ==========================================================
+# QUESTION 5
+# Store 9 and 9.0 separately
+# using a Dictionary.
+# ==========================================================
 
-cgpa = {}
+values = {
 
-x = int(input("Enter int value in cgpa"))
-cgpa.update({"cgpa1" : x})
-y = float(input("Enter value in float"))
-cgpa.update({"cgpa2" : y})
+    "Integer": 9,
 
-print("Latest CGPA is",cgpa)
+    "Float": 9.0
 
-#Python treat 8 and 8.0 same 
+}
+
+print(values)
+
+# Output:
+#
+# {
+#   'Integer': 9,
+#   'Float': 9.0
+# }
+#
+# Here,
+# the Keys are different,
+# so both values are stored.
+
+
+# ==========================================================
+# BONUS QUESTION 6
+# Create a Dictionary containing
+# your personal details.
+# ==========================================================
+
+student = {
+
+    "Name": "Sundram",
+
+    "Age": 22,
+
+    "City": "Lucknow",
+
+    "Course": "Python"
+
+}
+
+print(student)
+
+
+# ==========================================================
+# BONUS QUESTION 7
+# Create two Sets and find
+# their Union and Intersection.
+# ==========================================================
+
+set1 = {1, 2, 3, 4}
+
+set2 = {3, 4, 5, 6}
+
+print("Union =", set1.union(set2))
+
+print("Intersection =", set1.intersection(set2))
+
+
+# ==========================================================
+#           PRACTICE SUMMARY
+# ==========================================================
+
+# After completing these questions,
+# you should be able to:
+#
+# ✅ Create Dictionaries
+# ✅ Store Lists inside Dictionaries
+# ✅ Take User Input
+# ✅ Update Dictionaries
+# ✅ Create Sets
+# ✅ Remove Duplicate Values
+# ✅ Use len()
+# ✅ Use union()
+# ✅ Use intersection()
+# ✅ Understand why 9 and 9.0
+#    are treated as the same
+#    value inside a Set.
+#
+# 🎉 Congratulations!
+# You have completed the
+# Dictionary and Set Practice Questions.
+⭐ Important interview concept
+
+A common interview question is:
+
+print({9, 9.0})
+
+Output:
+
+{9}
+
+because:
+
+9 == 9.0
+
+is True, and sets store only unique values.
+
+If you want to store them separately, use different keys in a dictionary:
+
+values = {
+    "Integer": 9,
+    "Float": 9.0
+}
+
+This distinction is worth highlighting in your course because it surprises many beginners and is frequently asked in Python interviews.
