@@ -136,7 +136,7 @@ This curriculum prioritizes practical AI/ML preparation over traditional compute
 - File searching and text processing
 - **Files:** `file.py`, `sample.txt`
 
-#### Chapter 12: Exception Handling ⏳
+#### Chapter 12: Exception Handling ✅
 - try, except blocks
 - Specific exceptions (ValueError, TypeError, etc.)
 - Multiple exceptions, else, finally
@@ -160,7 +160,7 @@ This curriculum prioritizes practical AI/ML preparation over traditional compute
 
 ### ⏳ Module 3: Python for AI/ML (Not Started)
 
-#### Chapter 16: NumPy ⏳
+#### Chapter 16: NumPy ✅
 - Array creation and operations
 - Indexing and slicing
 - Vectorization
