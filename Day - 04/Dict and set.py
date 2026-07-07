@@ -1,151 +1,567 @@
- # Dictionary in Python
+# ==========================================================
+#            DAY 4 - PYTHON PROGRAMMING
+#          Topic: Dictionaries and Sets
+# ==========================================================
 
-# Dictionaries are used to store data values in key:value pair
-
-#They are unorderd, mutable and they are not allow the duplicate key
-
-info = {"name" : "sundram",
-        "cgpa": "10",
-        "marks": [34,56,78,89],
-        "address": "lucknow",
-        "is_adult" : True}
-
-print("Name in the dict is = ",info["name"])
-print(type(info))
-
-# add element in dict
-
-info["name"] = "change"
-print(info["name"])
+# In this lesson, you will learn:
+#
+# ✅ What is a Dictionary?
+# ✅ Creating Dictionaries
+# ✅ Accessing Dictionary Values
+# ✅ Updating Dictionaries
+# ✅ Nested Dictionaries
+# ✅ Dictionary Methods
+# ✅ What is a Set?
+# ✅ Creating Sets
+# ✅ Set Methods
+# ✅ Set Operations
 
 
-# Nested dictionaries
-    
+# ==========================================================
+#               WHAT IS A DICTIONARY?
+# ==========================================================
+
+# A Dictionary is a built-in Python data type
+# used to store data in the form of
+# Key : Value pairs.
+#
+# Example:
+#
+# Name  -> Sundram
+# Age   -> 22
+# City  -> Lucknow
+#
+# Here,
+# Name, Age and City are Keys.
+#
+# Sundram, 22 and Lucknow are Values.
+
+# Dictionary Syntax
+
 student = {
-    "name" : "sundram",
-    "subject" : {
-        "math":89,
-        "che":90,
-        }
+    "name": "Sundram",
+    "cgpa": 10,
+    "marks": [34, 56, 78, 89],
+    "address": "Lucknow",
+    "is_adult": True
 }
 
-print(student["subject"]["math"])
+print(student)
 
-# Dictionary Method
-
-# myDict.key() It return all key
-
-print("Key of dict is ",student.keys()) # return key name and subject 
-
-# To typecast in list 
-
-print("Change to list",list(student.keys()))
-
-# Total number of key
-
-print("Length of dict is ",len(student))
-
-# mydict.values() return the all values
-
-print("value of dict student is ", student.values())
-
-# imp: we can store list in dict and store dict in a list
-
-# mydict.items() It return all (key, val) pair as tuple
-
-print("It return the key value pair as tuple", student.items())
+# Output:
+# {
+#   'name': 'Sundram',
+#   'cgpa': 10,
+#   ...
+# }
 
 
+# ==========================================================
+#            FEATURES OF DICTIONARY
+# ==========================================================
 
-# we can not access the index in the items so we will convert it into list
-""" 📦 List = Box
+# ✅ Stores data as Key : Value
+#
+# ✅ Mutable
+# (We can change values.)
+#
+# ✅ Keys must be unique.
+#
+# ✅ Values can be duplicated.
+#
+# ✅ Can store different data types.
+#
+# ✅ Can even store Lists and Dictionaries.
 
-You can open it
 
-You can take item number 0
+# ==========================================================
+#          ACCESSING VALUES FROM DICTIONARY
+# ==========================================================
 
-You can count positions
+# We access values using their Keys.
 
-👉 Indexing works
+print(student["name"])
 
-🪟 dict_items = Window
+# Output:
+# Sundram
 
-You can look through
+print(student["cgpa"])
 
-You can walk through one by one
+# Output:
+# 10
 
-But there are no numbered positions 
+print(student["marks"])
 
-👉 Indexing does NOT work """ 
+# Output:
+# [34, 56, 78, 89]
 
+
+# ==========================================================
+#             CHECKING DATA TYPE
+# ==========================================================
+
+print(type(student))
+
+# Output:
+# <class 'dict'>
+
+
+# ==========================================================
+#          UPDATING A DICTIONARY
+# ==========================================================
+
+# Dictionaries are mutable.
+# So we can change existing values.
+
+student["name"] = "Rahul"
+
+print(student)
+
+# Output:
+# name becomes Rahul
+
+
+# ==========================================================
+#         ADDING A NEW KEY-VALUE PAIR
+# ==========================================================
+
+student["city"] = "Delhi"
+
+print(student)
+
+# A new key "city"
+# has been added.
+
+
+# ==========================================================
+#          NESTED DICTIONARY
+# ==========================================================
+
+# A dictionary can contain another dictionary.
+
+student = {
+
+    "name": "Sundram",
+
+    "subjects": {
+
+        "Math": 89,
+
+        "Chemistry": 90,
+
+        "Physics": 95
+
+    }
+
+}
+
+print(student)
+
+# Access nested values
+
+print(student["subjects"]["Math"])
+
+# Output:
+# 89
+
+
+# ==========================================================
+#          DICTIONARY METHODS
+# ==========================================================
+
+
+# ==========================================================
+#                keys()
+# ==========================================================
+
+# keys() returns all Keys.
+
+print(student.keys())
+
+# Output:
+# dict_keys(['name', 'subjects'])
+
+# Convert into a list.
 
 print(list(student.keys()))
-pair = list(student.keys())
 
-print("Now it return the index item",pair[0][1])
+# Output:
+# ['name', 'subjects']
 
-# myDict.get(key) Return the key according to value
+# Count total keys.
 
-print(student.get("name")) # If key is wrong then return none
+print(len(student))
 
-# MyDict.update(new dict) can update the dict
-
-student.update({"City" : "Delhi"})
-print("Updated dict is ",student)
+# Output:
+# 2
 
 
+# ==========================================================
+#               values()
+# ==========================================================
 
-# Set in python
-# Set s the collection of the unordered items
-# Each element in the set must be unique and immutable.
-# we can't store list and dict in a set because it is mutable
-# Repeated elements stored only once, so it resoled to {1,2}
+# values() returns all Values.
+
+print(student.values())
+
+# Output:
+# dict_values([...])
+
+# Convert into list.
+
+print(list(student.values()))
 
 
-collection = {1,2,3,4,4, "hello", "world"}
-# Set ignore the dublicate value
-print("Type of collection = ",collection)
-print("Total number of item in collection is", len(collection))
-print("type of set",type(collection))
+# ==========================================================
+#                items()
+# ==========================================================
 
-# set Method 
+# items() returns every
+# Key-Value pair as a tuple.
 
-#add method
+print(student.items())
+
+# Output:
+# dict_items([
+# ('name','Sundram'),
+# ('subjects',{...})
+# ])
+
+# Convert into a list.
+
+pairs = list(student.items())
+
+print(pairs)
+
+# Output:
+# [('name','Sundram'),
+# ('subjects',{...})]
+
+# Now indexing works.
+
+print(pairs[0])
+
+# Output:
+# ('name', 'Sundram')
+
+print(pairs[0][0])
+
+# Output:
+# name
+
+print(pairs[0][1])
+
+# Output:
+# Sundram
+
+
+# ==========================================================
+#                  get()
+# ==========================================================
+
+# get() safely returns a value.
+
+print(student.get("name"))
+
+# Output:
+# Sundram
+
+# If key does not exist
+
+print(student.get("phone"))
+
+# Output:
+# None
+
+# Unlike student["phone"],
+# get() does NOT produce an error.
+
+
+# ==========================================================
+#                update()
+# ==========================================================
+
+# update() adds new data
+# or updates existing data.
+
+student.update({"city": "Lucknow"})
+
+print(student)
+
+# Add multiple values.
+
+student.update({
+
+    "age": 22,
+
+    "branch": "AI & ML"
+
+})
+
+print(student)
+
+
+# ==========================================================
+#        IMPORTANT CONCEPT
+# ==========================================================
+
+# Dictionary can store Lists.
+
+student = {
+
+    "marks": [78, 90, 88]
+
+}
+
+# Dictionary can store Dictionaries.
+
+student = {
+
+    "details": {
+
+        "city": "Lucknow"
+
+    }
+
+}
+
+# List can also store Dictionaries.
+
+students = [
+
+    {"name": "Aman"},
+
+    {"name": "Rahul"}
+
+]
+
+
+# ==========================================================
+#              WHAT IS A SET?
+# ==========================================================
+
+# A Set is an unordered collection
+# of UNIQUE elements.
+
+# Features:
+#
+# ✅ No Duplicate Values
+#
+# ✅ Mutable
+#
+# ✅ Unordered
+#
+# ✅ No Indexing
+
+collection = {1, 2, 3, 4, 4, "Hello", "World"}
+
+print(collection)
+
+# Duplicate value 4
+# appears only once.
+
+print(type(collection))
+
+print(len(collection))
+
+
+# ==========================================================
+#          EMPTY SET
+# ==========================================================
+
+# Wrong
+
+empty = {}
+
+print(type(empty))
+
+# Output:
+# dict
+
+# Correct
+
+empty_set = set()
+
+print(type(empty_set))
+
+# Output:
+# set
+
+
+# ==========================================================
+#             SET METHODS
+# ==========================================================
+
+
+# ==========================================================
+#               add()
+# ==========================================================
+
+collection = {1, 2, 3}
+
 collection.add(5)
-print("add element in set 5 " )
 
-print("update set ",collection)
+print(collection)
 
-# Remove method
+# Adds 5 into the set.
 
-print("remove element in set 5")
+
+# ==========================================================
+#              remove()
+# ==========================================================
+
 collection.remove(5)
-print("update set are",collection)
 
-# clear method
+print(collection)
 
-print(" Clean the set ")
+# Removes 5.
+
+# If element does not exist,
+# remove() gives an error.
+
+
+# ==========================================================
+#              discard()
+# ==========================================================
+
+# discard() removes an element.
+
+# But unlike remove(),
+# it never gives an error.
+
+collection.discard(10)
+
+
+# ==========================================================
+#               clear()
+# ==========================================================
 
 collection.clear()
 
-print("length of set after clear method is",len(collection))
+print(collection)
 
-collection = {3,4,6}
+# Output:
+# set()
 
-#pop() Pop the  random value
+
+# ==========================================================
+#                pop()
+# ==========================================================
+
+collection = {10, 20, 30}
 
 print(collection.pop())
 
-# union(set2) combine the both set value and return new
+# Removes a RANDOM element.
 
-collection ={1,2}
-collection1 = {2,3,4}
+print(collection)
 
-print("set 1 is",collection)
-print("set 2 is",collection1 )
 
-print(" new set is",collection.union(collection1))
+# ==========================================================
+#                union()
+# ==========================================================
 
-# intersection(set2) # combines common values and return new
+set1 = {1, 2}
 
-print("common of these set is", collection.intersection(collection1))
+set2 = {2, 3, 4}
+
+print(set1.union(set2))
+
+# Output:
+# {1,2,3,4}
+
+# Union combines all unique values.
+
+
+# ==========================================================
+#            intersection()
+# ==========================================================
+
+print(set1.intersection(set2))
+
+# Output:
+# {2}
+
+# Only common elements.
+
+
+# ==========================================================
+#             DIFFERENCE
+# ==========================================================
+
+# Dictionary
+#
+# Stores Key : Value pairs.
+#
+# Example
+#
+# {
+#   "name":"Sundram"
+# }
+
+# Set
+#
+# Stores only unique values.
+#
+# Example
+#
+# {1,2,3,4}
+
+
+# ==========================================================
+#             PRACTICE QUESTIONS
+# ==========================================================
+
+# Q1 Create a dictionary of a student.
+
+# Q2 Print all Keys.
+
+# Q3 Print all Values.
+
+# Q4 Add your city.
+
+# Q5 Update your age.
+
+# Q6 Create a nested dictionary.
+
+# Q7 Create a set of fruits.
+
+# Q8 Add one fruit.
+
+# Q9 Remove one fruit.
+
+# Q10 Find the union of two sets.
+
+# Q11 Find the intersection of two sets.
+
+# Q12 Explain the difference
+# between Dictionary and Set.
+
+
+# ==========================================================
+#              DAY 4 SUMMARY
+# ==========================================================
+
+# Today you learned:
+#
+# ✅ Dictionary
+# ✅ Key-Value Pair
+# ✅ Access Dictionary Values
+# ✅ Nested Dictionary
+# ✅ keys()
+# ✅ values()
+# ✅ items()
+# ✅ get()
+# ✅ update()
+# ✅ Set
+# ✅ add()
+# ✅ remove()
+# ✅ discard()
+# ✅ clear()
+# ✅ pop()
+# ✅ union()
+# ✅ intersection()
+#
+# 🎉 Congratulations!
+# You have successfully completed
+# Dictionaries and Sets in Python.
