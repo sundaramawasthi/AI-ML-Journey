@@ -25,13 +25,16 @@ while count <= 5:
 
 # How this works, iteration by iteration:
 #
+# Initially count = 1.
+# Condition "count <= 5" is True, so Python enters the loop.
+#
 # Iteration 1 -> count = 1 -> condition True  -> prints "Hello" -> count becomes 2
 # Iteration 2 -> count = 2 -> condition True  -> prints "Hello" -> count becomes 3
 # Iteration 3 -> count = 3 -> condition True  -> prints "Hello" -> count becomes 4
 # Iteration 4 -> count = 4 -> condition True  -> prints "Hello" -> count becomes 5
 # Iteration 5 -> count = 5 -> condition True  -> prints "Hello" -> count becomes 6
 #
-# The loop stops because count becomes 6, and 6 <= 5 is False.
+# Now condition "6 <= 5" is False, so the loop stops.
 
 
 # ==========================================================
@@ -49,6 +52,16 @@ while count <= 5:
 # - The loop stops the moment the condition becomes False.
 # - Something inside the loop must eventually make the
 #   condition False, otherwise the loop never ends.
+
+# Example:
+
+count = 1
+
+while count <= 3:
+    print(count)
+    count += 1
+
+# Output: 1 2 3
 
 
 # ==========================================================
@@ -94,6 +107,13 @@ while i <= 10:                   # repeat for multipliers 1 to 10
 
 # We loop "i" from 1 to 10 and multiply "n" by "i" each time
 # to print all 10 rows of the table.
+#
+# Line by line:
+# n            -> the number entered by the user, whose table we want.
+# i = 1        -> starts the table from the first row.
+# while i<=10  -> runs the loop exactly 10 times, once per row.
+# print(...)   -> prints one line of the multiplication table.
+# i += 1       -> moves on to the next multiplier.
 
 
 # ==========================================================
@@ -120,10 +140,16 @@ else:
 
 # len(numbers) -> total number of elements in the list, used so we
 #                 never check an index that doesn't exist.
+#                 Example: len([10, 20, 30]) is 3.
 # idx          -> the index we are currently checking, moves 1 step
 #                 at a time from 0 up to len(numbers) - 1.
 # break        -> stops the loop immediately once a match is found,
 #                 instead of wasting time checking the rest.
+#
+# Note: this example uses an "if found / else" check after the loop
+# instead of a while-else, but a while loop can also have its own
+# "else" block -- it runs only if the loop finished normally (i.e.
+# "break" was never hit). If "break" does run, that "else" is skipped.
 
 
 # ==========================================================
@@ -212,6 +238,13 @@ print("Done")
 # On each pass through the loop, "variable" takes the
 # next value from "sequence" automatically -- there is
 # no need to manually track an index like in a while loop.
+
+# Example:
+
+for i in range(5):
+    print(i)
+
+# Output: 0 1 2 3 4
 
 
 # ==========================================================
