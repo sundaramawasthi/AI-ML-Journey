@@ -1,122 +1,324 @@
- # Python can be used to perform operations on a file.( read and write data)
+# ==========================================================
+#            DAY 8 - PYTHON PROGRAMMING
+#              Topic: File Handling
+# ==========================================================
 
-"""
+# In this lesson, you will learn:
+#
+# ✅ What is File Handling?
+# ✅ File Types
+# ✅ open()
+# ✅ read()
+# ✅ readline()
+# ✅ write()
+# ✅ File Modes
+# ✅ with Statement
+# ✅ Delete a File
+# ✅ Practice Programs
 
-Types of file 
 
-1. Text files : .txt, .docx, .log etc
-2. Binary files : ,mp4, .mov, .png, .jpeg 
+# ==========================================================
+#           WHAT IS FILE HANDLING?
+# ==========================================================
 
-"""
+# File Handling is used to
+# store data permanently inside a file.
+#
+# Without files,
+# data is lost when the program ends.
 
-#  OPEN READ AND CLOSE FILE
+# Examples:
+#
+# Student Records
+# Notes
+# Attendance
+# Login Details
 
-""" WE HAE TO OPEN A FILE BEFORE READING OR WRITING"""
 
-#F =open("file_name","mode")
-# mode = read or write ( We have two mode read or write)
+# ==========================================================
+#              TYPES OF FILES
+# ==========================================================
 
-f = open("/Users/shivamawasthi/Desktop/AI-ML-Journey/Day - 05 Python/sample.txt", "r") # we open file
-data = f.read() # we can pass parameter also line number of character
+# 1. Text Files
+#
+# .txt
+# .py
+# .csv
+# .log
+
+# 2. Binary Files
+#
+# .jpg
+# .png
+# .mp3
+# .mp4
+# .pdf
+
+
+# ==========================================================
+#          OPENING A FILE
+# ==========================================================
+
+# Syntax
+#
+# open(file_name, mode)
+
+# Example
+
+file = open("sample.txt", "r")
+
+# Always close the file
+# after using it.
+
+file.close()
+
+
+# ==========================================================
+#             FILE MODES
+# ==========================================================
+
+# "r"
+# Read only.
+#
+# "w"
+# Write.
+# Creates a new file if it
+# does not exist.
+# Replaces old content.
+#
+# "a"
+# Append.
+# Adds data at the end.
+#
+# "x"
+# Creates a new file.
+# Gives an error if the file exists.
+#
+# "r+"
+# Read and Write.
+
+
+# ==========================================================
+#             read()
+# ==========================================================
+
+# read() reads the complete file.
+
+file = open("sample.txt", "r")
+
+data = file.read()
+
 print(data)
-print(type(data))
-f.close()
 
-# readline() # read one line at a time.
-
-f = open("/Users/shivamawasthi/Desktop/AI-ML-Journey/Day - 05 Python/sample.txt", "r") # we open file
-
-line1 = f.readline() # Line 1 read
-print(line1)
-
-line2 = f.readline() # line 2 read
-print(line2)
-
-f.close()
+file.close()
 
 
+# ==========================================================
+#            readline()
+# ==========================================================
 
-# writing to a file
+# readline() reads one line
+# at a time.
 
-""" There is two method one is we open file in w mode another is 
-we open file in a(add at the end ) mode """
+file = open("sample.txt", "r")
 
-f = open("/Users/shivamawasthi/Desktop/AI-ML-Journey/Day - 05 Python/sample.txt", "w") # we open filef = open("/Users/shivamawasthi/Desktop/AI-ML-Journey/Day - 05 Python/sample.txt", "r") # we open file
-f.write("I am writing my file, Its mean my previous text is change")
-f.close()
+print(file.readline())
 
+print(file.readline())
 
-f = open("demo.txt","w") # like that we can create our file demo.txt
-f.write("1,2,3,4,5,3") # the abc is write in file demo.txt itself
-f.close()
-
-
-# Combine reading and writing 
-# r+ ( reading and writig)
+file.close()
 
 
+# ==========================================================
+#             readlines()
+# ==========================================================
 
-# with syntax
+# readlines() returns
+# all lines as a list.
 
-#with open("demo.txt", "a") as f:
-#    data = f.read()
-#    print(data)
+file = open("sample.txt", "r")
 
+lines = file.readlines()
 
-# Delete the file 
-""" using the os module
-module(like a code library) is a file written by another
-programmer that generally has a function we can use.
-"""
+print(lines)
 
-#import os # pre install module
-
-#os.remove("file name")
+file.close()
 
 
-# WAP to searh writing word in sample.txt
+# ==========================================================
+#             write()
+# ==========================================================
 
-word = "writing"
-with open("/Users/shivamawasthi/Desktop/AI-ML-Journey/Day - 05 Python/sample.txt", "r") as f:
-          data = f.read()
-          if(data.find(word)!=-1):
-                 print("found")
-          else:
-                 print("Not found") 
+# "w" mode replaces
+# old content.
 
+file = open("sample.txt", "w")
 
+file.write("Welcome to Python")
 
-# WAP to find which line of the file does the word
-# writing occur first
-"""
-def check_for_line():
-        word ="writing"
-        data = True
-        line_no = 1
-        with open("/Users/shivamawasthi/Desktop/AI-ML-Journey/Day - 05 Python/sample.txt", "r") as f:
-                while data:
-                        f.readline()
-                        if(word in data):
-                                print(line_no)
-                                return
-                        line_no+=1
-
-                return -1
-        
-check_for_line()
-"""
+file.close()
 
 
-# WAP to read a file and print even number in the givve file
+# ==========================================================
+#            append()
+# ==========================================================
+
+# "a" mode adds new data
+# at the end of the file.
+
+file = open("sample.txt", "a")
+
+file.write("\nThis is a new line.")
+
+file.close()
+
+
+# ==========================================================
+#        CREATE A NEW FILE
+# ==========================================================
+
+file = open("demo.txt", "w")
+
+file.write("Python File Handling")
+
+file.close()
+
+
+# ==========================================================
+#           with STATEMENT
+# ==========================================================
+
+# Best way to open files.
+#
+# It automatically closes
+# the file.
+
+with open("sample.txt", "r") as file:
+
+    data = file.read()
+
+    print(data)
+
+
+# ==========================================================
+#         DELETE A FILE
+# ==========================================================
+
+# import os
+#
+# os.remove("sample.txt")
+
+# os is a built-in module
+# used for file operations.
+
+
+# ==========================================================
+#     PROGRAM : SEARCH A WORD
+# ==========================================================
+
+word = "Python"
+
+with open("sample.txt", "r") as file:
+
+    data = file.read()
+
+    if word in data:
+
+        print("Word Found")
+
+    else:
+
+        print("Word Not Found")
+
+
+# ==========================================================
+#   PROGRAM : FIND THE LINE NUMBER
+# ==========================================================
+
+word = "Python"
+
+line_number = 1
+
+with open("sample.txt", "r") as file:
+
+    for line in file:
+
+        if word in line:
+
+            print("Found at Line", line_number)
+
+            break
+
+        line_number += 1
+
+    else:
+
+        print("Word Not Found")
+
+
+# ==========================================================
+#    PROGRAM : COUNT EVEN NUMBERS
+# ==========================================================
+
+# demo.txt
+#
+# 1,2,3,4,5,6,7,8
 
 count = 0
 
-with open("demo.txt", "r") as f:
-        data =f.read()
+with open("demo.txt", "r") as file:
 
-        nums = data.split(",")
-        for val in nums:
-                if(int(val)%2 == 0):
-                        count+=1
-print(count)
+    data = file.read()
 
+numbers = data.split(",")
+
+for number in numbers:
+
+    if int(number) % 2 == 0:
+
+        count += 1
+
+print("Total Even Numbers =", count)
+
+
+# ==========================================================
+#           PRACTICE QUESTIONS
+# ==========================================================
+
+# Q1 Read and print a file.
+
+# Q2 Create a new file.
+
+# Q3 Write your name into a file.
+
+# Q4 Append your city name.
+
+# Q5 Search a word in a file.
+
+# Q6 Count the number of lines.
+
+# Q7 Count the number of words.
+
+# Q8 Count even numbers from a file.
+
+
+# ==========================================================
+#              DAY 8 SUMMARY
+# ==========================================================
+
+# Today you learned:
+#
+# ✅ File Handling
+# ✅ open()
+# ✅ read()
+# ✅ readline()
+# ✅ readlines()
+# ✅ write()
+# ✅ append()
+# ✅ File Modes
+# ✅ with Statement
+# ✅ Delete a File
+#
+# 🎉 Congratulations!
+# You have successfully completed
+# the File Handling chapter.
