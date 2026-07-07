@@ -39,7 +39,7 @@ list1 = [1,3,4,3]
 list2 = [4,5,2,5]
 list3 = [5,6,4,3]
 
-arr_list = np.array([[list1,list2,list3]]) # here we put square bracket because we have 2Dimention array
+arr_list = np.array([list1,list2,list3]) # here we put square bracket because we have 2Dimention array
 
 print(arr_list) #2Dimention array
 
@@ -175,7 +175,7 @@ print(arr3[:, 2]) # 3rd col value
 
 
 #here syntax is row colum slicing
-print(arr3[::1,2])  #slicing on columns # here 2 tell how much jump we do, and next 2 tell the which row
+print(arr3[::1,2])  #slicing on columns # ::1 selects all rows (step 1), and 2 selects only column index 2, giving a 1D array of that column's values
 print(arr3[::, 1:2]) #slicing on rows and columns
 
 # Array reshaping and flattening

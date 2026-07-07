@@ -1,5 +1,4 @@
-print("This is our first exceptional handeler program ") 
-# It give us error because we not put double quotes at the end, so compiler understand it, our code is not execuate
+print("This is our first exceptional handeler program ")
 
 a = int(input("Enter the value "))
 print(a)

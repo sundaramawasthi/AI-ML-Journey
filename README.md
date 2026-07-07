@@ -208,11 +208,41 @@ This curriculum prioritizes practical AI/ML preparation over traditional compute
 AI-ML-Journey/
 │
 ├── Module-01-Python-Fundamentals/
+│   ├── Chapter-01-Introduction-to-Python/
+│   ├── Chapter-02-Variables-Data-Types/
+│   ├── Chapter-03-Input-Output/
+│   ├── Chapter-04-Operators-Expressions/
+│   ├── Chapter-05-Strings/
+│   ├── Chapter-06-Conditional-Statements/
+│   ├── Chapter-07-Lists-Tuples/
+│   ├── Chapter-08-Dictionaries-Sets/
+│   ├── Chapter-09-Loops/
+│   ├── Chapter-10-Functions/
+│   └── Homework/
+│
 ├── Module-02-Intermediate-Python/
+│   ├── Chapter-11-File-Handling/
+│   ├── Chapter-12-Exception-Handling/
+│   ├── Chapter-13-Modules-Packages/
+│   ├── Chapter-14-List-Comprehensions/
+│   ├── Chapter-15-Lambda-Functions/
+│   └── Homework/
+│
 ├── Module-03-Python-for-AI-ML/
+│   ├── Chapter-16-NumPy/
+│   ├── Chapter-17-Pandas/
+│   └── Chapter-18-Matplotlib/
+│
 ├── Module-04-Final-Projects/
+│
+├── OOP-Concepts/          (kept separate from the core curriculum)
+│
 └── README.md
 ```
+
+Each chapter folder contains the lesson file(s) for that topic. Solved
+practice-question programs live in each module's `Homework/` folder,
+one file per chapter, so lesson files stay focused on teaching.
 
 ---
 

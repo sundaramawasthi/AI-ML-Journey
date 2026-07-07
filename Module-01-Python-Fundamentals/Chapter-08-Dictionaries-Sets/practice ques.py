@@ -224,27 +224,25 @@ print("Intersection =", set1.intersection(set2))
 # 🎉 Congratulations!
 # You have completed the
 # Dictionary and Set Practice Questions.
-⭐ Important interview concept
 
-A common interview question is:
 
-print({9, 9.0})
+# ==========================================================
+#           BONUS: INTERVIEW CONCEPT
+# ==========================================================
 
-Output:
-
-{9}
-
-because:
-
-9 == 9.0
-
-is True, and sets store only unique values.
-
-If you want to store them separately, use different keys in a dictionary:
-
-values = {
-    "Integer": 9,
-    "Float": 9.0
-}
-
-This distinction is worth highlighting in your course because it surprises many beginners and is frequently asked in Python interviews.
+# A common interview question is:
+#
+#   print({9, 9.0})
+#
+# Output:
+#
+#   {9}
+#
+# This happens because 9 == 9.0 is True in Python, and a
+# Set only stores unique values -- so 9.0 is treated as a
+# duplicate of 9 and dropped.
+#
+# If you want to store them separately, use different keys
+# in a Dictionary instead (see Question 5 above), since
+# Dictionary keys don't get merged by equality the way Set
+# values do.

@@ -63,13 +63,13 @@ class account():
     
     # debit card
     def debit(self,amount):
-        self.balance =- amount
+        self.balance -= amount
         print("Your rs", amount, "is debited")
         print("you ammount",self.balance)
 
         # debit card
     def credit(self,amount):
-        self.balance =+ amount
+        self.balance += amount
         print("Your rs", amount, "is creadited")
         print("your ammount", self.balance)
     

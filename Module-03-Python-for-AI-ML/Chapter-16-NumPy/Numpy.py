@@ -38,7 +38,7 @@ list1 = [1,3,4,3]
 list2 = [4,5,2,5]
 list3 = [5,6,4,3]
 
-arr_list = np.array([[list1,list2,list3]]) # here we put square bracket because we have 2Dimention array
+arr_list = np.array([list1,list2,list3]) # here we put square bracket because we have 2Dimention array
 
 print(arr_list) #2Dimention array
 

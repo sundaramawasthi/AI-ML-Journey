@@ -260,9 +260,18 @@ with open("sample.txt", "r") as file:
 #    PROGRAM : COUNT EVEN NUMBERS
 # ==========================================================
 
-# demo.txt
+# This program expects demo.txt to contain
+# comma-separated numbers, e.g:
 #
 # 1,2,3,4,5,6,7,8
+#
+# So we (re)write demo.txt with that content first,
+# overwriting the "Python File Handling" text that was
+# written into it earlier in this file.
+
+with open("demo.txt", "w") as file:
+
+    file.write("1,2,3,4,5,6,7,8")
 
 count = 0
 
