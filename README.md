@@ -38,13 +38,13 @@ This curriculum prioritizes practical AI/ML preparation over traditional compute
 
 ### **Module 2: Intermediate Python**
 - ✅ Chapter 11: File Handling
-- ⏳ Chapter 12: Exception Handling
+- ✅ Chapter 12: Exception Handling
 - ⏳ Chapter 13: Modules & Packages
 - ⏳ Chapter 14: List Comprehensions
 - ⏳ Chapter 15: Lambda Functions
 
 ### **Module 3: Python for AI/ML**
-- ⏳ Chapter 16: NumPy
+- ✅ Chapter 16: NumPy
 - ⏳ Chapter 17: Pandas
 - ⏳ Chapter 18: Matplotlib
 
@@ -63,7 +63,7 @@ This curriculum prioritizes practical AI/ML preparation over traditional compute
 #### Chapter 1: Introduction to Python ✅
 - Python basics, installation, running programs
 - Comments and print() function
-- **Files:** `Variable and DataType.py`
+- **Files:** `Intro.py`
 
 #### Chapter 2: Variables & Data Types ✅
 - Variables, Strings, Integers, Floats
@@ -141,6 +141,7 @@ This curriculum prioritizes practical AI/ML preparation over traditional compute
 - Specific exceptions (ValueError, TypeError, etc.)
 - Multiple exceptions, else, finally
 - raise statement
+- **Files:** `hadleing.py`
 
 #### Chapter 13: Modules & Packages ⏳
 - import statements
@@ -158,7 +159,7 @@ This curriculum prioritizes practical AI/ML preparation over traditional compute
 - map() and filter() functions
 - Functional programming basics
 
-### ⏳ Module 3: Python for AI/ML (Not Started)
+### ✅ Module 3: Python for AI/ML (In Progress)
 
 #### Chapter 16: NumPy ✅
 - Array creation and operations
@@ -270,7 +271,7 @@ one file per chapter, so lesson files stay focused on teaching.
 - 📍 **Phase:** Module 1 Complete, Module 2 In Progress
 - 📍 **Progress:** Core Python Foundation Completed ✅
 - 📍 **Focus:** Python Fundamentals → AI/ML Libraries
-- 📍 **Next:** Exception Handling, Modules, List Comprehensions
+- 📍 **Next:** Modules & Packages, List Comprehensions, Lambda Functions
 
 ---
 
@@ -278,7 +279,7 @@ one file per chapter, so lesson files stay focused on teaching.
 
 - **Start Date:** June 2026
 - **Current Streak:** 15 Days
-- **Chapters Completed:** 11
+- **Chapters Completed:** 12
 - **Projects Completed:** 0
 - **Next Milestone:** NumPy & Pandas
 
