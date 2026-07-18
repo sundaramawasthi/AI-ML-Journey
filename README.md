@@ -10,7 +10,7 @@ I am currently preparing for **M.Tech in Artificial Intelligence & Machine Learn
 
 ## 🎯 Why This Repository Exists
 
-This repository serves as a public record of my preparation for AI/ML. It contains notes, code examples, practice problems, mini-projects, and progress tracking as I move from Python fundamentals to machine learning and deep learning.
+This repository is a public record of my Python-for-AI/ML preparation. It contains notes, code examples, practice problems, and mini-projects covering everything from Python fundamentals through NumPy, Pandas, and Matplotlib.
 
 ---
 
@@ -18,7 +18,7 @@ This repository serves as a public record of my preparation for AI/ML. It contai
 
 **Goal:** Teach Python specifically as a foundation for AI/ML in the shortest practical time.
 
-This curriculum prioritizes practical AI/ML preparation over traditional computer science concepts. OOP fundamentals have been completed separately and will be revisited in advanced software engineering and ML project development.
+This curriculum prioritizes practical AI/ML preparation over traditional computer science concepts. OOP fundamentals were completed separately and are kept in their own `OOP-Concepts/` folder outside the core curriculum.
 
 ---
 
@@ -39,20 +39,14 @@ This curriculum prioritizes practical AI/ML preparation over traditional compute
 ### **Module 2: Intermediate Python**
 - ✅ Chapter 11: File Handling
 - ✅ Chapter 12: Exception Handling
-- ⏳ Chapter 13: Modules & Packages
-- ⏳ Chapter 14: List Comprehensions
-- ⏳ Chapter 15: Lambda Functions
+- ✅ Chapter 13: Modules & Packages
+- ✅ Chapter 14: List Comprehensions
+- ✅ Chapter 15: Lambda Functions
 
 ### **Module 3: Python for AI/ML**
 - ✅ Chapter 16: NumPy
 - ✅ Chapter 17: Pandas
 - ✅ Chapter 18: Matplotlib
-
-### **Module 4: Final Projects**
-- ⏳ Project 1: Student Management System
-- ⏳ Project 2: Expense Tracker
-- ⏳ Project 3: CSV Data Analyzer
-- ⏳ Project 4: Mini AI/ML Dataset Exploration
 
 ---
 
@@ -126,7 +120,7 @@ This curriculum prioritizes practical AI/ML preparation over traditional compute
 - Practical functions (sum, average, table, currency conversion)
 - **Files:** `Function.py`, `Recursion.py`
 
-### ✅ Module 2: Intermediate Python (In Progress)
+### ✅ Module 2: Intermediate Python (Completed)
 
 #### Chapter 11: File Handling ✅
 - Opening files (r, w, a modes)
@@ -143,21 +137,26 @@ This curriculum prioritizes practical AI/ML preparation over traditional compute
 - raise statement
 - **Files:** `hadleing.py`
 
-#### Chapter 13: Modules & Packages ⏳
-- import statements
-- math, random, datetime modules
-- Creating custom modules
-- pip basics
+#### Chapter 13: Modules & Packages ✅
+- Modules vs packages, different import styles (import, as, from...import, import *)
+- Built-in modules: math, random, datetime
+- Writing and importing your own custom module (__name__ == "__main__")
+- pip basics (install, list, show, freeze, requirements.txt)
+- **Files:** `Modules and Packages.py`, `mymodule.py`
 
-#### Chapter 14: List Comprehensions ⏳
-- Basic comprehensions
-- Conditional comprehensions
-- Practical applications
+#### Chapter 14: List Comprehensions ✅
+- Basic comprehensions vs the equivalent for-loop
+- Conditional comprehensions (filtering with if, if-else expressions)
+- Nested loops inside a comprehension (flattening a matrix)
+- Practical text/number transformations, dict and set comprehensions
+- **Files:** `List Comprehensions.py`
 
-#### Chapter 15: Lambda Functions ⏳
-- Lambda syntax
-- map() and filter() functions
-- Functional programming basics
+#### Chapter 15: Lambda Functions ✅
+- Lambda syntax and lambda vs a normal function
+- map() and filter() with lambda
+- sorted() with a lambda key, reduce() with lambda
+- When to use lambda vs a regular function
+- **Files:** `Lambda Functions.py`
 
 ### ✅ Module 3: Python for AI/ML (Completed)
 
@@ -193,28 +192,9 @@ This curriculum prioritizes practical AI/ML preparation over traditional compute
 - **Mini Project:** Visualize Student Marks
 - **Files:** `Matplotlib.py`
 
-### ⏳ Module 4: Final Projects (Not Started)
-- Project 1: Student Management System
-- Project 2: Expense Tracker
-- Project 3: CSV Data Analyzer
-- Project 4: Mini AI/ML Dataset Exploration
-
 ---
 
-## � Future Learning Roadmap
-
-- Scikit-learn
-- Machine Learning Fundamentals
-- Statistics for ML
-- Deep Learning
-- TensorFlow
-- PyTorch
-- MLOps
-- AI Projects
-
----
-
-## ️ Current Repository Structure
+## 🗂️ Current Repository Structure
 
 ```
 AI-ML-Journey/
@@ -244,8 +224,6 @@ AI-ML-Journey/
 │   ├── Chapter-16-NumPy/
 │   ├── Chapter-17-Pandas/
 │   └── Chapter-18-Matplotlib/
-│
-├── Module-04-Final-Projects/
 │
 ├── OOP-Concepts/          (kept separate from the core curriculum)
 │
@@ -279,20 +257,18 @@ one file per chapter, so lesson files stay focused on teaching.
 ---
 
 ## 🌱 Current Status
-- 📍 **Phase:** Module 1 Complete, Module 3 Complete, Module 2 In Progress
-- 📍 **Progress:** Core Python Foundation + NumPy, Pandas & Matplotlib Completed ✅
-- 📍 **Focus:** Finishing Intermediate Python → Module 4 Final Projects
-- 📍 **Next:** Modules & Packages, List Comprehensions, Lambda Functions
+- 📍 **Phase:** Curriculum Complete 🎉 (Modules 1-3)
+- 📍 **Progress:** Python Fundamentals, Intermediate Python, and NumPy/Pandas/Matplotlib all Completed ✅
+- 📍 **Status:** Journey concluded — this repository stands as a finished reference
 
 ---
 
 ## 📊 Learning Metrics
 
 - **Start Date:** June 2026
-- **Current Streak:** 15 Days
-- **Chapters Completed:** 14
-- **Projects Completed:** 0
-- **Next Milestone:** Modules & Packages (Module 2)
+- **Chapters Completed:** 18 / 18 (Modules 1-3 done)
+- **Mini-Projects Completed:** 3
+- **Status:** Complete ✅
 
 ---
 
@@ -300,5 +276,5 @@ one file per chapter, so lesson files stay focused on teaching.
 - **LinkedIn:** [Sundram Awasthi](https://www.linkedin.com/in/sundram-awasthi-97603b20b/)
 - **GitHub:** [sundaramawasthi](https://github.com/sundaramawasthi/AI-ML-Journey)
 
-> Learning in public. Improving every day. Building for the long term.
+> Journey complete — from Python fundamentals to a working AI/ML toolkit (NumPy, Pandas, Matplotlib), built and documented in public.
 
