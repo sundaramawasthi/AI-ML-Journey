@@ -14,7 +14,16 @@ homework_sample.txt
 homework_new.txt
 homework_numbers.txt
 
+# Generated output from running the Pandas lesson script
+student_data.csv
+
+# Generated output from running the Matplotlib lesson script
+monthly_revenue.png
+
 # Virtual environments
 venv/
 .venv/
 env/
+
+# Competitive Programming Helper extension cache
+.cph/

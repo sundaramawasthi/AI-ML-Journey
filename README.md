@@ -45,8 +45,8 @@ This curriculum prioritizes practical AI/ML preparation over traditional compute
 
 ### **Module 3: Python for AI/ML**
 - ✅ Chapter 16: NumPy
-- ⏳ Chapter 17: Pandas
-- ⏳ Chapter 18: Matplotlib
+- ✅ Chapter 17: Pandas
+- ✅ Chapter 18: Matplotlib
 
 ### **Module 4: Final Projects**
 - ⏳ Project 1: Student Management System
@@ -159,7 +159,7 @@ This curriculum prioritizes practical AI/ML preparation over traditional compute
 - map() and filter() functions
 - Functional programming basics
 
-### ✅ Module 3: Python for AI/ML (In Progress)
+### ✅ Module 3: Python for AI/ML (Completed)
 
 #### Chapter 16: NumPy ✅
 - Array creation and operations
@@ -168,19 +168,30 @@ This curriculum prioritizes practical AI/ML preparation over traditional compute
 - Aggregations
 - **Mini Project:** Student Marks Analysis
 
-#### Chapter 17: Pandas ⏳
-- Series and DataFrames
-- CSV reading/writing
-- Data filtering and sorting
-- Missing values handling
-- Basic statistics
-- **Mini Project:** Student Performance Dataset Analysis
+#### Chapter 17: Pandas ✅
+- Creating DataFrames from lists and dictionaries
+- Exploration: head(), tail(), shape, columns, info(), describe()
+- Reading/writing CSV files
+- Selecting data with column indexing, loc, and iloc
+- Filtering with boolean indexing, where(), and query()
+- Adding, updating, deleting rows and columns (vectorized operations)
+- Sorting, working with dates (to_datetime, .dt accessor, Timedelta)
+- Missing values (isnull(), fillna()), value_counts(), groupby(), agg()
+- Combining data with concat() and merge()
+- **Mini Project:** Student Performance Dataset Analysis (full read → clean → X/y ML workflow)
+- **Files:** `Pandas.py`
 
-#### Chapter 18: Matplotlib ⏳
-- Line plots, bar plots, histograms
-- Scatter plots
-- Labels and titles
+#### Chapter 18: Matplotlib ✅
+- Line charts (plot, customization: color, marker, linestyle, linewidth)
+- Titles, axis labels, figure sizing
+- Multiple lines on one chart with legends
+- Bar charts, histograms (bins/distribution), pie charts (autopct)
+- Scatter plots for spotting relationships between variables
+- Subplots: multiple charts in one figure
+- Plotting straight from a Pandas DataFrame
+- Saving charts to image files (savefig)
 - **Mini Project:** Visualize Student Marks
+- **Files:** `Matplotlib.py`
 
 ### ⏳ Module 4: Final Projects (Not Started)
 - Project 1: Student Management System
@@ -259,18 +270,18 @@ one file per chapter, so lesson files stay focused on teaching.
 ## 🛠️ Technologies Used
 
 - Python
-- NumPy (Planned)
-- Pandas (Planned)
-- Matplotlib (Planned)
+- NumPy
+- Pandas
+- Matplotlib
 - Git
 - GitHub
 
 ---
 
 ## 🌱 Current Status
-- 📍 **Phase:** Module 1 Complete, Module 2 In Progress
-- 📍 **Progress:** Core Python Foundation Completed ✅
-- 📍 **Focus:** Python Fundamentals → AI/ML Libraries
+- 📍 **Phase:** Module 1 Complete, Module 3 Complete, Module 2 In Progress
+- 📍 **Progress:** Core Python Foundation + NumPy, Pandas & Matplotlib Completed ✅
+- 📍 **Focus:** Finishing Intermediate Python → Module 4 Final Projects
 - 📍 **Next:** Modules & Packages, List Comprehensions, Lambda Functions
 
 ---
@@ -279,9 +290,9 @@ one file per chapter, so lesson files stay focused on teaching.
 
 - **Start Date:** June 2026
 - **Current Streak:** 15 Days
-- **Chapters Completed:** 12
+- **Chapters Completed:** 14
 - **Projects Completed:** 0
-- **Next Milestone:** NumPy & Pandas
+- **Next Milestone:** Modules & Packages (Module 2)
 
 ---
 
