@@ -1,10 +1,27 @@
-# 🚀 AI-ML-Journey
+# AI-ML-Journey
 
-This repository documents my learning journey in **Artificial Intelligence & Machine Learning**, following a structured curriculum designed specifically for AI/ML preparation.
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c)
+![Status](https://img.shields.io/badge/status-complete-success)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
-I am currently preparing for **M.Tech in Artificial Intelligence & Machine Learning**, with a strong focus on fundamentals, consistency, and practical understanding.
+A structured, 18-chapter Python curriculum built as the foundation for AI/ML work, from language basics through NumPy, Pandas and Matplotlib. Every chapter has a runnable lesson script, and Modules 1 and 2 include solved homework sets.
 
-![Repo Views](https://komarev.com/ghpvc/?username=sundaramawasthi&repo=AI-ML-Journey&label=Repo%20Views&color=blue)
+## Quick start
+
+```bash
+git clone https://github.com/sundaramawasthi/AI-ML-Journey.git
+cd AI-ML-Journey
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+# run any lesson (quote paths that contain spaces)
+python "Module-03-Python-for-AI-ML/Chapter-17-Pandas/Pandas.py"
+```
+
+Modules 1 and 2 use only the standard library; Module 3 needs the packages in `requirements.txt`.
 
 ---
 
@@ -111,7 +128,7 @@ This curriculum prioritizes practical AI/ML preparation over traditional compute
 - range() function with start, stop, step
 - break, continue, pass statements
 - Search algorithms and iterations
-- **Files:** `Loop Break and Contnue .py`, `Range.py`
+- **Files:** `Loop Break and Continue.py`, `Range.py`
 
 #### Chapter 10: Functions ✅
 - Function definition and parameters
@@ -135,7 +152,7 @@ This curriculum prioritizes practical AI/ML preparation over traditional compute
 - Specific exceptions (ValueError, TypeError, etc.)
 - Multiple exceptions, else, finally
 - raise statement
-- **Files:** `hadleing.py`
+- **Files:** `Exception Handling.py`
 
 #### Chapter 13: Modules & Packages ✅
 - Modules vs packages, different import styles (import, as, from...import, import *)
@@ -227,6 +244,8 @@ AI-ML-Journey/
 │
 ├── OOP-Concepts/          (kept separate from the core curriculum)
 │
+├── requirements.txt
+├── LICENSE
 └── README.md
 ```
 
@@ -274,7 +293,11 @@ one file per chapter, so lesson files stay focused on teaching.
 
 ## 🤝 Connect & Follow the Journey
 - **LinkedIn:** [Sundram Awasthi](https://www.linkedin.com/in/sundram-awasthi-97603b20b/)
-- **GitHub:** [sundaramawasthi](https://github.com/sundaramawasthi/AI-ML-Journey)
+- **GitHub:** [sundaramawasthi](https://github.com/sundaramawasthi)
 
 > Journey complete — from Python fundamentals to a working AI/ML toolkit (NumPy, Pandas, Matplotlib), built and documented in public.
+
+## License
+
+Released under the [MIT License](LICENSE).
 
